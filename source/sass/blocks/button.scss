@@ -1,0 +1,51 @@
+.button {
+  color: $default-white-color;
+  font-family: $Nunito-ff;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  border: none;
+  position: relative;
+
+  &--accent {
+    background: linear-gradient(90deg, #20b985 0%, #2c9cab 90.1%, #2ba2b2 99.99%);
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 50%;
+      right: 0;
+      height: 4px;
+      background: rgba(33, 185, 135, 1);
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      right: 50%;
+      height: 4px;
+      background: rgba(33, 185, 135, 1);
+    }
+
+    &:hover {
+      background: linear-gradient(90deg, #2C9CAB 0%, #2BA2B2 23.44%, #20B985 100%);
+
+      &::after {
+        left: 0;
+        right: 50%;
+      }
+
+      &::before {
+        left: 50%;
+        right: 0;
+      }
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    font-size: 18px;
+  }
+}

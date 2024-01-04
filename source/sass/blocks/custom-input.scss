@@ -1,0 +1,113 @@
+.custom-input {
+  position: relative;
+  display: flex;
+
+  /* @media screen and (max-width: 767px) {
+    width: 100%;
+  } */
+
+  label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    /* @media screen and (max-width: 767px) {
+      align-items: flex-start;
+      flex-direction: column;
+    } */
+
+    input {
+      flex-grow: 1;
+      padding: 10px 10px 10px 0;
+      background-color: transparent;
+      border: none;
+      color: $default-white-color;
+      font-family: $Nunito-ff;
+      font-size: 18px;
+      font-weight: 300;
+      border-bottom: 2px solid $default-white-color;
+      transition: border 0.3s ease;
+
+     /*  @media screen and (max-width: 767px) {
+        max-width: unset;
+        width: 100%;
+      } */
+
+      &:hover {
+        outline: none;
+        opacity: 0.5;
+      }
+
+      &:focus {
+         outline: none;
+        border-bottom: 2px solid rgba($default-white-color, 0.3);
+      }
+
+      &::placeholder {
+        color: $default-white-color;
+      }
+    }
+  }
+
+
+  /* &__label {
+    @media screen and (max-width: 767px) {
+      margin: 0 0 18px 0;
+    }
+  } */
+
+  &__error {
+    position: absolute;
+    right: 0;
+    bottom: 35px;
+    color: $color-error;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    /* @media screen and (max-width: 767px) {
+      bottom: 20px;
+    } */
+  }
+
+  &.is-invalid {
+    input,
+    textarea {
+      border-bottom: 2px solid $color-error;
+
+      &:focus,
+      &:hover {
+        border-bottom: 2px solid rgba($color-error, 0.5);
+      }
+    }
+  }
+
+  &.is-valid {
+    input {
+      border-bottom: 2px solid $color-accent;
+
+      &:focus,
+      &:hover {
+        border-bottom: 2px solid rgba($color-accent, 0.5);
+      }
+    }
+  }
+
+  .input-message {
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    font-family: $Nunito-ff;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+
+    &.is-invalid {
+      color: $color-error;
+    }
+
+    &.is-valid {
+      color: $color-accent;
+    }
+  }
+}

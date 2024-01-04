@@ -1,0 +1,170 @@
+.projects__wrapper {
+  max-width: 360px;
+  padding: 0 15px;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet-width) {
+    max-width: 698px;
+    padding: 80px 35px;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 80px 205px;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+
+.projects__title {
+  font-family: $Manrope-ff;
+  font-size: 55px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+}
+
+.projects__list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+
+  @media (min-width: $tablet-width) {
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.projects__item {
+  max-width: 360px;
+  padding: 0 20px 23px 20px;
+  background: rgba(43, 162, 178, 0.10);
+  box-shadow: 0px 4px 25px 0px rgba(255, 255, 255, 0.25) inset;
+  backdrop-filter: blur(25px);
+
+  display: flex;
+  flex-direction: column;
+  border-radius: 2%; // перепроверить
+  box-sizing: border-box;
+  border: 1px solid $default-white-color;
+
+
+
+
+  @media (min-width: $tablet-width) {
+    min-width: 340px;
+    padding: 0 14px 16px 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 732px;
+    padding:  0 30px 30px 30px;
+  }
+
+  p {
+    font-family: $Manrope-ff;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 27px 0;
+
+
+    @media (min-width: $tablet-width) {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    @media (min-width: $desktop-width) {
+      font-size: 28px;
+      margin: 0;
+      padding: 15px 0;
+    }
+
+    span {
+      font-family: $Nunito-ff;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+
+
+      @media (min-width: $tablet-width) {
+        font-size: 14px;
+      }
+
+      @media (min-width: $desktop-width) {
+        font-size: 28px;
+      }
+    }
+  }
+}
+
+.projects__subtitle {
+  text-align: center;
+  font-family: $Manrope-ff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  margin: 0;
+  padding: 27px 0;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 34px;
+    margin: 0;
+    padding: 30px 40px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    right: 0;
+    width: 357px;
+    height: 108px;
+    background: url('/img/projects-background-title.png');
+    z-index: -1;
+    border-radius: 10px;
+
+    @media (min-width: $tablet-width) {
+      top: 0;
+      left: -30px;
+      right: 0;
+      width: 337px;
+      height: 100%;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 0;
+      left: -30px;
+      right: 0;
+      width: 732px;
+      height: 100%;
+    }
+  }
+}
+
+.projects__image {
+  position: relative;
+  bottom: -100px;
+  width: 303px;
+  height: 220px;
+
+}
+
+.projects__button {
+  padding: 23px 88px 23px 66px;
+  align-self: center;
+}

@@ -1,0 +1,279 @@
+.employees {
+  color: $default-white-color;
+}
+
+.employees__wrapper {
+  max-width: 360px;
+  padding: 0 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    max-width: 698px;
+    padding: 80px 35px;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 115px 72px;
+    max-width: 1780px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.employees__title {
+  font-family: $Manrope-ff;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 40px;
+    font-size: 26px;
+    font-weight: 700;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    font-weight: 600;
+    margin-bottom: 80px;
+  }
+}
+
+.employees__tabs {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  align-content: center;
+  margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -70px;
+      right: -90px;
+      background-image: url("/img/svg/employees-circle.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 325px;
+      height: 205px;
+      z-index: -1;
+    }
+  }
+
+}
+
+.employees__tab {
+  border: none;
+  background-color: transparent;
+  width: 179px;
+  height: 107px;
+  padding: 0;
+  filter: brightness(50%);
+
+  @media (min-width: $tablet-width) {
+    width: 158px;
+    height: 112px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 427px;
+    height: 346px;
+  }
+}
+
+.employees__image {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+// .employees__tabs .employees__tab:nth-child(1) .employees__image,
+// .employees__tabs .employees__tab:nth-child(4) .employees__image {
+//   border-radius: 5% 0 5% 0;
+// }
+
+// .employees__tabs .employees__tab:nth-child(2) .employees__image,
+// .employees__tabs .employees__tab:nth-child(3) .employees__image {
+//   border-radius: 0 5% 0 5%;
+// }
+
+.employees__tab:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      background-image: url("/img/svg/employees-star.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100px;
+      height: 105px;
+      z-index: 5;
+    }
+  }
+
+}
+
+.employees__tab:nth-child(3) {
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 30px;
+      left: 30px;
+      background-image: url("/img/svg/employees-star.svg");
+      // background-repeat: no-repeat;
+      // background-position: center;
+      // background-size: cover;
+      width: 100px;
+      height: 105px;
+      z-index: 5;
+      transform: rotate(180deg);
+    }
+  }
+
+}
+
+
+.employees__tab.is-active {
+  filter: none;
+}
+
+.employees__list {
+  @include reset-list;
+
+  @media (min-width: $desktop-width) { //$tablet-width + 1
+    order: -1;
+  }
+  // order: -1;
+}
+
+.employees__item {
+  @media (min-width: $desktop-width) {
+    padding: 100px;//не правильный отступ
+  }
+
+  p {
+    font-family: $Manrope-ff;
+    font-size: 18px;
+    font-weight: 500;
+
+    @media (min-width: $desktop-width) {
+      font-size: 28px;
+    }
+
+    span {
+      font-family: $Nunito-ff;
+      font-size: 18px;
+      font-weight: 300;
+
+      @media (min-width: $desktop-width) {
+        font-size: 28px;
+      }
+    }
+
+    cite {
+      font-family: $Nunito-ff;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 138.77%;
+
+      @media (min-width: $desktop-width) {
+        font-size: 28px;
+        font-weight: 300;
+        line-height: 122.22%;
+      }
+    }
+  }
+}
+
+.employees__subtitle {
+  font-family: $Manrope-ff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 45px;
+    margin-bottom: 35px;
+  }
+}
+
+.employees__project {
+  margin: 0;
+  margin-bottom: 10px;
+  // font-size: 28px;
+  // font-weight: 500;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 15px;
+  }
+}
+
+.employees__experience {
+  margin: 0;
+  margin-bottom: 15px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 25px;
+  }
+}
+
+.employees__about {
+  margin: 0;
+  // font-size: 28px;
+  // font-weight: 500;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    top: -230px; //высчитать позицию
+    left: -360px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.employees__stack-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 645px;
+  margin-bottom: 30px;
+
+  @media (min-width: $desktop-width) {
+    gap: 11px;
+  }
+}
+
+.employees__stack-item {
+  background: linear-gradient(180deg, rgba(43, 162, 178, 0.56) 0%, rgba(32, 185, 133, 0.56) 100%);
+  padding: 11px 21px;
+  border-radius: 3%;
+  text-align: center;
+  font-family: $Nunito-ff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 93.75%;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+  }
+}

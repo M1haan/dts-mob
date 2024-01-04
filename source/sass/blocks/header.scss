@@ -1,0 +1,19 @@
+/* .header {
+  max-width: 1780px;
+  padding: 0 70px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    max-width: 768px;
+  }
+
+  @media (max-width: $mobile-width) {
+    max-width: 390px;
+  }
+} */
+
+.page__body {
+  margin: 0;
+  background-color: $default-black-color;
+  color: $default-white-color;
+}
