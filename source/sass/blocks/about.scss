@@ -36,7 +36,7 @@
   margin: 0 auto;
   max-width: 360px;
   padding: 0 15px 8px;
-  gap: 50px;
+  gap: 62px;
 
   @media (min-width: $tablet-width) {
     max-width: 698px;
@@ -206,9 +206,10 @@
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
-  line-height: normal;
+  line-height: 1.4;
   margin: 0;
   margin-bottom: 45px;
+
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -221,10 +222,9 @@
 }
 
 .about__link {
-  padding: 25px 55px;
+  padding: 21px 55px;
   display: block;
   text-align: center;
-  margin-top: 30px; //высчитать отступ
 
   @media (min-width: $tablet-width) {
     width: fit-content;

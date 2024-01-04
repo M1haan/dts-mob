@@ -84,67 +84,11 @@
 
     <main class="main-container">
 
-      <section class="hero">
+      <!-- <section class="hero">
         <h2 class="visually-hidden">Слайдер</h2>
-          <!-- <div class="hero__container swiper swiper-hero">
-            <ul class="hero__list hero__list--nojs swiper-wrapper">
-              <li class="hero__item swiper-slide">
-                <img class="hero__image" src="./img/slide1.svg" width="542" height="595" alt="первый слайд.">
-                <div class="hero__content">
-                  <h3 class="hero__title">Разработка мобильных приложений и веб-сервисов</h3>
-                  <p class="hero__description">Ведущая компания в сфере разработки приложений на iOS и Android. Не боимся сложностей, жадные к технологиям и смелые в новых решениях. Горим идеей создавать крутые IT-проекты для пользователей.</p>
-                  <a href="#" class="hero__link button button--accent">Отправить заявку</a>
-                </div>
-              </li>
-              <li class="hero__item swiper-slide">
-                <img class="hero__image" src="./img/slide2.svg" width="542" height="595" alt="второй слайд.">
-                <div class="hero__content">
-                  <h3 class="hero__title">Мобильные приложения для стартапов и Бизнеса</h3>
-                  <p class="hero__description">Мы специализируемся на технически сложных проектах по индивидуальным условиям клиента.</p>
-                  <a href="#" class="hero__link button button--accent">Отправить заявку</a>
-                </div>
-              </li>
-              <li class="hero__item swiper-slide">
-                <img class="hero__image" src="./img/slide3.svg" width="542" height="595" alt="третий слайд.">
-                <div class="hero__content">
-                  <h3 class="hero__title">Топ 3 в Новосибирске по разработке мобильных приложений</h3>
-                  <p class="hero__description">Наша основная специализация - разработка мобильных приложений на заказ. В нашем портфолио более пятидесяти успешных проектов. В DSTlab вы можете заказать разработку мобильного приложения с нуля для увеличения прибыли и повышения лояльности пользователей по самой демократичной цене среди конкурентов.</p>
-                  <a href="#" class="hero__link button button--accent">Отправить заявку</a>
-                </div>
-              </li>
-            </ul>
-
-            <div class="hero__pagination swiper-pagination">
-
-            </div>
-          </div> -->
         <div class="hero__container swiper swiper-hero">
-
-          <div class="swiper-wrapper">
-
-            <div class="hero__item swiper-slide">
-              <div class="hero__image">
-                <img src="./img/slide1.svg" width="542" height="595" alt="первый слайд.">
-              </div>
-              <div class="hero__content">
-                <h3 class="hero__title">Разработка мобильных приложений и веб-сервисов</h3>
-                <p class="hero__description">Ведущая компания в сфере разработки приложений на iOS и Android. Не боимся сложностей, жадные к технологиям и смелые в новых решениях. Горим идеей создавать крутые IT-проекты для пользователей.</p>
-                <a href="#" class="hero__link button button--accent">Отправить заявку</a>
-              </div>
-            </div>
-
-            <div class="hero__item swiper-slide visually-hidden">
-              <div class="hero__image">
-                <img src="./img/slide2.svg" width="542" height="595" alt="второй слайд.">
-              </div>
-              <div class="hero__content">
-                <h3 class="hero__title">Мобильные приложения для стартапов и Бизнеса</h3>
-                <p class="hero__description">Мы специализируемся на технически сложных проектах по индивидуальным условиям клиента.</p>
-                <a href="#" class="hero__link button button--accent">Отправить заявку</a>
-              </div>
-            </div>
-
-            <div class="hero__item swiper-slide visually-hidden">
+          <div class="hero__slider-wrapper">
+           <div class="hero__item swiper-slide visually-hidden">
               <div class="hero__image">
                 <img src="./img/slide3.svg" width="542" height="595" alt="третий слайд.">
               </div>
@@ -155,11 +99,102 @@
               </div>
             </div>
           </div>
-
           <div class="hero__pagination swiper-pagination"></div>
+        </div>
+      </section> -->
 
+
+      <section class="hero">
+        <h2 class="visually-hidden">Слайдер</h2>
+        <div class="hero__slider-container swiper swiper-initialized swiper-hero">
+          <ul class="hero__slider-wrapper hero__slider-wrapper--nojs swiper-wrapper">
+
+            <li class="hero__item swiper-slide">
+                <div class="hero__image">
+                  <img src="./img/slide1.svg" width="390" height="312" alt="первый слайд.">
+                </div>
+                <div class="hero__text">
+                  <h3 class="hero__title">Разработка мобильных приложений и веб-сервисов</h3>
+                  <p class="hero__description">Ведущая компания в сфере разработки приложений на iOS и Android. Не боимся сложностей, жадные к технологиям и смелые в новых решениях. Горим идеей создавать крутые IT-проекты для пользователей.</p>
+                  <a href="#" class="hero__link button button--accent">Отправить заявку</a>
+                </div>
+            </li>
+
+            <li class="hero__item swiper-slide">
+                <div class="hero__image">
+                  <img src="./img/slide2.svg" width="390" height="312" alt="первый слайд.">
+                </div>
+                <div class="hero__text">
+                  <h3 class="hero__title">Мобильные приложения для стартапов и Бизнеса</h3>
+                  <p class="hero__description">Мы специализируемся на технически сложных проектах по индивидуальным условиям клиента.</p>
+                  <a href="#" class="hero__link button button--accent">Отправить заявку</a>
+                </div>
+            </li>
+
+            <li class="hero__item swiper-slide">
+                <div class="hero__image">
+                  <img src="./img/slide3.svg" width="390" height="312" alt="первый слайд.">
+                </div>
+                <div class="hero__text">
+                  <h3 class="hero__title">Топ 3 в Новосибирске по разработке мобильных приложений</h3>
+                  <p class="hero__description">Наша основная специализация - разработка мобильных приложений на заказ. В нашем портфолио более пятидесяти успешных проектов. В DSTlab вы можете заказать разработку мобильного приложения с нуля для увеличения прибыли и повышения лояльности пользователей по самой демократичной цене среди конкурентов.</p>
+                  <a href="#" class="hero__link button button--accent">Отправить заявку</a>
+                </div>
+            </li>
+          </ul>
+
+          <!-- <div class="swiper-pagination">
+            <div class="swiper-pagination-bullet"></div>
+            <div class="swiper-pagination-bullet"></div>
+            <div class="swiper-pagination-bullet"></div>
+          </div> -->
         </div>
       </section>
+
+      <!-- <section class="about">
+        <h2 class="visually-hidden">Слайдер</h2>
+        <div class="about-slider__container swiper swiper-hero">
+          <ul class="about-slider__wrapper about-slider__wrapper--nojs swiper-wrapper">
+            <li class="about-slider__item about-slider__item--flat-white swiper-slide">
+              <div class="about-slider__content">
+                <picture class="about-slider__picture">
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/slider-desktop1.webp 1x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/slider-tablet1.webp 1x">
+                  <img class="about-slider__image" src="./img/slider-mobile1.png" width="280" height="280" alt="изображение товара.">
+                </picture>
+                <p class="about__badge">Новинка!</p>
+                <h2 class="about__title">Декаф Флэт Уайт</h2>
+                <p class="about__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                <div class="about__buy">
+                  <del class="about__old-price">295₽</del>
+                  <b class="about__new-price">225₽</b>
+                  <a href="#" class="about__button-buy button button--accent">Заказать</a>
+                </div>
+              </div>
+            </li>
+            <li class="about-slider__item about-slider__item--flat-white swiper-slide">
+              <div class="about-slider__content">
+                <picture class="about-slider__picture">
+                  <source type="image/webp" media="(min-width: 1440px)"
+                  srcset="img/slider-desktop1.webp 1x">                    <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/slider-tablet1.webp 1x">
+                  <img class="about-slider__image" src="./img/slider-mobile1.png" width="280" height="280" alt="изображение товара.">
+                </picture>
+                <p class="about__badge">Новинка!</p>
+                <h2 class="about__title">Декаф Флэт Уайт</h2>
+                <p class="about__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                <div class="about__buy">
+                  <del class="about__old-price">295₽</del>
+                  <b class="about__new-price">225₽</b>
+                  <a href="#" class="about__button-buy button button--accent">Заказать</a>
+                </div>
+              </div>
+            </li>
+            </ul>
+            </div>
+            </section> -->
 
       <section class="about">
         <h2 class="visually-hidden">О компании</h2>
@@ -293,11 +328,6 @@
                 <h3 class="life-cycle__subtitle">Сбор информации и аналитика</h3>
                 <p class="life-cycle__description">
                   Сбор информации и аналитика позволяет разработчикам получить информацию о целевой аудитории, ее потребностях и предпочтениях. В этот пункт создания приложения входит:
-                  Анализ рынка и целевой аудитории: Необходимо провести исследование рынка и определить целевую аудиторию приложения. Это поможет понять, какие функции и возможности должны быть включены в приложение.
-                  Составление ТЗ и проектирование: На основе анализа рынка и целевой аудитории необходимо составить техническое задание и спроектировать приложение.
-                  Сбор данных: Ищем данные у конкурентов, адаптируем по себя и делаем лучше.
-                  Анализ данных: Полученные данные необходимо проанализировать, чтобы понять, какие функции приложения наиболее популярны среди пользователей, какие проблемы возникают при использовании приложения и т.д.
-                  Оптимизация приложения: На основе анализа данных можно оптимизировать приложение, чтобы улучшить его производительность и удобство использования.
                 </p>
                 <a class="life-cycle__link button" href="#">Еще...</a>
               </div>
@@ -409,7 +439,7 @@
         </div>
       </section>
 
-      <!-- <section class="projects">
+      <section class="projects">
         <h2 class="projects__title">Портфолио</h2>
         <div class="projects__wrapper">
           <ul class="projects__list">
@@ -422,7 +452,7 @@
               <img class="projects__image" src="./img/projects-item-background-1.png" height="436" alt="мобильное приложение.">
               <button class="projects__button button button--accent">Показать полностью</button>
             </li>
-            <li class="projects__item">
+            <li class="projects__item visually-hidden">
               <h3 class="projects__subtitle">Приложения для помощи в судействе большого тенниса</h3>
               <p class="projects__time">Время создания: <span>12 месяцев</span></p>
               <p class="projects__budget">Бюджет на проект: <span>1.200.000 рублей.</span></p>
@@ -460,7 +490,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <section class="employees">
         <h2 class="employees__title">Сотрудники</h2>
@@ -492,22 +522,22 @@
                 <li class="employees__stack-item">Dart</li>
                 <li class="employees__stack-item">SQL</li>
                 <li class="employees__stack-item">SQLite</li>
-                <li class="employees__stack-item">MySql</li>
                 <li class="employees__stack-item">PostgreSQL</li>
                 <li class="employees__stack-item"> Google/Yandex maps</li>
-                <li class="employees__stack-item">BloC</li>
-                <li class="employees__stack-item">Firebase</li>
                 <li class="employees__stack-item">GetX</li>
                 <li class="employees__stack-item">OneSignal</li>
                 <li class="employees__stack-item">RxDart</li>
-                <li class="employees__stack-item">WebRTC</li>
-                <li class="employees__stack-item">Git</li>
                 <li class="employees__stack-item">Apple Pay/Google Pay</li>
                 <li class="employees__stack-item">Firebase Analytics</li>
-                <li class="employees__stack-item">Rive</li>
                 <li class="employees__stack-item">BloC</li>
                 <li class="employees__stack-item">Dio</li>
                 <li class="employees__stack-item">Http</li>
+                <li class="employees__stack-item">MySql</li>
+                <li class="employees__stack-item">Firebase</li>
+                <li class="employees__stack-item">Git</li>
+                <li class="employees__stack-item">Rive</li>
+                <li class="employees__stack-item">WebRTC</li>
+
               </ul>
 
               <p class="employees__about">
@@ -601,47 +631,47 @@
         <div class="advantages__wrapper">
           <ul class="advantages__list">
             <li class="advantages__item">
-              <img class="advantages__image" src="./img/svg/advantages-1.svg" width="76" height="76" alt="">
+              <img class="advantages__image" src="./img/svg/advantages-1.svg" width="58" height="58" alt="">
               <h3 class="advantages__subtitle">Постоянное обучение и развитие сотрудников</h3>
               <p class="advantages__description">
                 Согласованная работа специалистов разных отделов позволяет сократить время до получения итогового результата.
               </p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__image" src="./img/svg/advantages-2.svg" width="76" height="76" alt="">
+              <img class="advantages__image" src="./img/svg/advantages-2.svg" width="58" height="58" alt="">
               <h3 class="advantages__subtitle">Каждый наш сотрудник имеет более 10 завершенных проектов</h3>
               <p class="advantages__description">
                 Мы идем в ногу с развитием сферы Web-технологии и постоянно повышаем свои знания и навыки.
               </p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__image" src="./img/svg/advantages-3.svg" width="76" height="76" alt="">
+              <img class="advantages__image" src="./img/svg/advantages-3.svg" width="58" height="58" alt="">
               <h3 class="advantages__subtitle">Мы даем 100% гарантию работоспособности приложения</h3>
               <p class="advantages__description">
                 Создание качественного веб сервиса  это отличный метод. Создание качественного веб сервиса — это отличный метод самостоятельного.
               </p>
             </li>
-            <li class="advantages__item">
-              <img class="advantages__image" src="./img/svg/advantages-4.svg" width="76" height="76" alt="">
+            <!-- <li class="advantages__item">
+              <img class="advantages__image" src="./img/svg/advantages-4.svg" width="58" height="58" alt="">
               <h3 class="advantages__subtitle">Индивидуальный подход к каждому клиенту</h3>
               <p class="advantages__description">
                 Подбираем дизайн, логику работы приложения с учетом особенностей вашего бизнес-процесса.
               </p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__image" src="./img/svg/advantages-5.svg" width="76" height="76" alt="">
+              <img class="advantages__image" src="./img/svg/advantages-5.svg" width="58" height="58" alt="">
               <h3 class="advantages__subtitle">Мы беремся за самые сложные проекты</h3>
               <p class="advantages__description">
                 Наша команда разработчиков привыкла браться за самое сложные проекты, которые другие студии не могут осилить.
               </p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__image" src="./img/svg/advantages-6.svg" width="76" height="76" alt="">
+              <img class="advantages__image" src="./img/svg/advantages-6.svg" width="58" height="58" alt="">
               <h3 class="advantages__subtitle">Наша команда подойдет к проекту включая маркетинг</h3>
               <p class="advantages__description">
                 У нас в компании работаю высококвалефицированные маркетологи которые продвинули множество проектов и личных брендов.
               </p>
-            </li>
+            </li> -->
           </ul>
         </div>
       </section>
@@ -695,7 +725,7 @@
             </div>
           </div>
 
-          <div class="services__element" data-accordion="element">
+          <div class="services__element is-active" data-accordion="element">
             <button class="services__button" data-accordion="button">
               <span>Тестирование</span>
               <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,6 +1,6 @@
 .projects__wrapper {
   max-width: 360px;
-  padding: 0 15px;
+  padding: 43px 15px 80px;
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
@@ -18,10 +18,18 @@
 
 .projects__title {
   font-family: $Manrope-ff;
-  font-size: 55px;
-  font-weight: 600;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   text-align: center;
   margin: 0;
+  margin-top: 5px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 55px;
+    font-weight: 600;
+  }
 }
 
 .projects__list {
@@ -45,15 +53,12 @@
   background: rgba(43, 162, 178, 0.10);
   box-shadow: 0px 4px 25px 0px rgba(255, 255, 255, 0.25) inset;
   backdrop-filter: blur(25px);
-
   display: flex;
   flex-direction: column;
   border-radius: 2%; // перепроверить
   box-sizing: border-box;
   border: 1px solid $default-white-color;
-
-
-
+  min-height: 570px; //ВРЕМЕННО
 
   @media (min-width: $tablet-width) {
     min-width: 340px;
@@ -71,8 +76,8 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding: 27px 0;
-
+    // padding: 27px 0;
+    margin: 0;
 
     @media (min-width: $tablet-width) {
       font-size: 14px;
@@ -158,7 +163,7 @@
 
 .projects__image {
   position: relative;
-  bottom: -100px;
+  bottom: -11px;
   width: 303px;
   height: 220px;
 
@@ -167,4 +172,9 @@
 .projects__button {
   padding: 23px 88px 23px 66px;
   align-self: center;
+  font-family: $Nunito-ff;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
 }

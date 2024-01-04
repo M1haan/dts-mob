@@ -1,5 +1,5 @@
 .reviews__wrapper {
-  max-width: 360px;
+  max-width: 390px;
   padding: 0;
   margin: 0 auto;
 
@@ -39,7 +39,7 @@
 
 .reviews__slider {
   position: relative;
-  width: 360px;
+  width: 390px;
   margin: 0 auto;
   display: flex;
   gap: 50px;//пересчитать отступ
@@ -64,7 +64,7 @@
   flex-direction: column;
   margin: 0 auto;
   color: $default-white-color;
-  max-width: 360px;
+  max-width: 390px;
   padding: 40px 15px;
 
   @media (min-width: $tablet-width) {
@@ -87,7 +87,7 @@
   position: relative;
   width: fit-content;
   align-self: center;
-  margin-bottom: 37px;
+  margin-bottom: 65px;
 
   &::after {
     content: "";
@@ -155,7 +155,7 @@
 
 .reviews__description {
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 35px;
   font-family: $Nunito-ff;
   font-size: 14px;
   font-style: normal;
@@ -178,7 +178,7 @@
   font-family: $Nunito-ff;
   font-size: 14px;
   font-weight: 300;
-  padding: 16px 72px 16px 42px;
+  padding: 16px 65px 16px 40px;
   position: relative;
   align-self: center;
 

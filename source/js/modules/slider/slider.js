@@ -2,13 +2,10 @@
 
 function initHeroSwiper() {
   let heroSwiper = new Swiper('.swiper-hero', {
-    /* navigation: {
-      nextEl: '.button-slider--next',
-      prevEl: '.button-slider--prev',
-    }, */
 
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
 
     // autoplay: {
@@ -16,8 +13,8 @@ function initHeroSwiper() {
     // },
 
     direction: 'horizontal',
+    grabCursor: true,
     loop: true,
-    initialSlide: 0,
     slidesPerView: 1,
     speed: 2000,
   });
@@ -30,6 +27,7 @@ function initPartnersSwiper() {
 
     direction: 'horizontal',
     loop: true,
+    grabCursor: true,
     speed: 2000,
 
     autoplay: {
@@ -58,12 +56,13 @@ function initReviewsSwiper() {
   let reviewsSwiper = new Swiper('.reviews__slider-container', {
 
     direction: 'horizontal',
+    grabCursor: true,
     slidesPerView: 1,
     loop: true,
-    speed: 1500,
-    autoplay: {
-      delay: 5000,
-    },
+    // speed: 1500,
+    // autoplay: {
+    //   delay: 5000,
+    // },
   });
   return reviewsSwiper;
 }

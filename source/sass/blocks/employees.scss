@@ -4,7 +4,7 @@
 
 .employees__wrapper {
   max-width: 360px;
-  padding: 0 15px;
+  padding: 40px 15px 80px;
   display: grid;
   grid-template-columns: 1fr;
   margin: 0 auto;
@@ -30,7 +30,6 @@
   font-weight: 700;
   text-align: center;
   margin: 0;
-  margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
@@ -49,7 +48,7 @@
   display: grid;
   grid-template-columns: repeat(2, min-content);
   align-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -148,7 +147,6 @@
 
 }
 
-
 .employees__tab.is-active {
   filter: none;
 }
@@ -207,7 +205,7 @@
   font-weight: 700;
   line-height: 120%;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     font-size: 45px;
@@ -217,7 +215,7 @@
 
 .employees__project {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   // font-size: 28px;
   // font-weight: 500;
   @media (min-width: $desktop-width) {
@@ -229,7 +227,7 @@
   margin: 0;
   margin-bottom: 15px;
 
-  @media (max-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 25px;
   }
 }
@@ -265,8 +263,8 @@
 
 .employees__stack-item {
   background: linear-gradient(180deg, rgba(43, 162, 178, 0.56) 0%, rgba(32, 185, 133, 0.56) 100%);
-  padding: 11px 21px;
-  border-radius: 3%;
+  padding: 9px 20px;
+  border-radius: 6px;
   text-align: center;
   font-family: $Nunito-ff;
   font-size: 14px;
