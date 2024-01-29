@@ -1,6 +1,6 @@
 .advantages {
   color: $default-white-color;
-  background: url("/img/advantages-background.png") no-repeat;
+  background: url("/img/advantages-background.webp") no-repeat;
   background-size: cover;
   position: relative;
 
@@ -8,12 +8,11 @@
     &::before {
       content: "";
       position: absolute;
-      top: -185px;
+      top: -200px;
       left: -78px;
       background-image: url("/img/svg/advantages-circle.svg");
       background-repeat: no-repeat;
       background-position: center;
-      // background-size: cover;
       width: 312px;
       height: 332px;
       z-index: -1;
@@ -30,28 +29,29 @@
 
   @media (min-width: $tablet-width) {
     font-size: 26px;
-    font-weight: 700;
+    margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
     font-weight: 600;
     font-size: 55px;
+    margin-bottom: 80px;
   }
 }
 
 .advantages__wrapper {
   margin: 0 auto;
-  max-width: 360px;
+  min-width: 360px;
   padding: 40px 15px;
 
   @media (min-width: $tablet-width) {
-    max-width: 698px;
-    padding: 80px 35px;
+    min-width: 698px;
+    padding: 40px 35px;
     gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 115px 72px;
+    padding: 5px 72px 40px;
     max-width: 1780px;
   }
 }
@@ -72,33 +72,38 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 200px; //не правильный отступ
+    column-gap: 200px;
     row-gap: 120px;
   }
 }
 
 .advantages__item {
   max-width: 515px;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    top: 40%;
-    left: calc(50% - 120px);
-    width: 249px;
-    height: 120px;
+    top: 50%;
+    left: calc(50% - 83px);
+    width: 183px;
+    height: 100px;
     background-color: rgba(32, 185, 133, 0.69);
-    filter: blur(81px);
+    filter: blur(50px);
     z-index: -1;
   }
 }
 
 .advantages__image {
   margin-bottom: 8px;
+
+  @media (min-width: $desktop-width) {
+    width: 76px;
+    height: 76px;
+  }
 }
 
 .advantages__subtitle {
@@ -116,7 +121,7 @@
     bottom: -15px;
     left: 0;
     right: 0;
-    background-image: url("/img/advantages-line.png");
+    background-image: url("/img/advantages-line.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

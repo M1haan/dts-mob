@@ -1,21 +1,26 @@
-const mainNav = document.querySelector('.navigation__list');
-const navToggle = document.querySelector('.header__toggle');
-const socialIcon = document.querySelector('.navigation__social');
-mainNav.classList.remove('navigation__list--nojs');
-navToggle.classList.remove('header__toggle--nojs');
+const navMain = document.querySelector('.main-header__nav');
+const navToggle = document.querySelector('.main-header__toggle');
+const social = document.querySelector('.main-header__social');
+navMain.classList.remove('main-header__nav--nojs');
 
-
-if (!mainNav.classList.contains('navigation__list--closed')) {
-  mainNav.classList.add('navigation__list--closed');
-  socialIcon.classList.add('social--visibility');
+if (navMain.classList.contains('main-header__nav')) {
+  navMain.classList.add('main-header__nav--closed');
 }
 
-navToggle.addEventListener('click', () => {
-  mainNav.classList.toggle('navigation__list--closed');
-  mainNav.classList.toggle('navigation__list--open');
-  navToggle.classList.toggle('header__toggle--open');
-  navToggle.classList.toggle('header__toggle--closed');
-  socialIcon.classList.toggle('social--visibility');
-  socialIcon.classList.toggle('social--hidden');
+navToggle.addEventListener('click', function () {
+  if (navMain.classList.contains('main-header__nav--closed')) {
+    navMain.classList.remove('main-header__nav--closed');
+    navMain.classList.add('main-header__nav--opened');
+    social.classList.remove('social--no-visibility');
+    social.classList.add('social--visibility');
+  } else {
+    navMain.classList.add('main-header__nav--closed');
+    navMain.classList.remove('main-header__nav--opened');
+    social.classList.add('social--no-visibility');
+    social.classList.remove('social--visibility');
+  }
 });
 
+if (window.innerWidth >= 1920) {
+  social.classList.remove('social--no-visibility');
+}

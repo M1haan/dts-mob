@@ -1,0 +1,209 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  transform: scale(1.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+  pointer-events: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__wrapper {
+    transform: translateZ(0);
+    background-color: rgba(#000000, 0.6);
+    position: relative;
+
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    min-width: 360px;
+    min-height: 100%;
+    padding: 0 15px;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  &__content {
+    position: relative;
+    box-sizing: border-box;
+    width: 334px;
+    padding: 38px;
+    background-color: $default-black-color;
+    border: 2px solid $default-white-color;
+    border-radius: 15px;
+
+    @media (min-width: $tablet-width) {
+      min-width: 698px;
+    }
+
+    @media (min-width: $desktop-width) {
+      min-width: 1248px;
+      padding: 115px 298px 100px 125px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 177px;
+      height: 19px;
+      top: 0px;
+      left: calc(50% - 88px);
+      background: url("../img/svg/modal-triangle.svg");
+      background-size: contain;
+
+      @media (min-width: $tablet-width) {
+        width: 357px;
+        height: 38px;
+        left: calc(50% - 178px);
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 280px;
+        height: 360px;
+        bottom: -41px;
+        right: 12px;
+        background: url("../img/modal-background.webp") no-repeat;
+        background-size: contain;
+
+        @media (min-width: $desktop-width) {
+          width: 356px;
+          height: 416px;
+          bottom: -10px;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  &__form {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @media (min-width: $tablet-width) {
+      max-width: 274px;
+      grid-template-columns: 1fr;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(2, 1fr);
+      min-width: 775px;
+      column-gap: 75px;
+      row-gap: 65px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 98px;
+      height: 97px;
+      top: -10%;
+      left: -10%;
+      background-color: #2ba2b2;
+      filter: blur(105px);
+      border-radius: 50%;
+
+      @media (min-width: $tablet-width) {
+        width: 134px;
+        height: 133px;
+        top: -30%;
+        left: -10%;
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 98px;
+      height: 97px;
+      bottom: -10%;
+      right: -10%;
+      background-color: #2ba2b2;
+      filter: blur(105px);
+      border-radius: 50%;
+
+      @media (min-width: $tablet-width) {
+        width: 134px;
+        height: 133px;
+        bottom: -30%;
+        right: -150%;
+      }
+
+      @media (min-width: $desktop-width) {
+        right: -30%;
+      }
+    }
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 0;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+    cursor: pointer;
+
+    @media (min-width: $tablet-width) {
+      top: 20px;
+      right: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 40px;
+      right: 40px;
+    }
+
+    svg {
+      display: block;
+    }
+  }
+
+  &--preload {
+    transition: none;
+  }
+
+  &.is-active {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1);
+    pointer-events: auto;
+  }
+
+  &__button {
+    padding: 19px 50px;
+
+    @media (min-width: $desktop-width) {
+      width: fit-content;
+      padding: 25px 66px;
+    }
+  }
+}

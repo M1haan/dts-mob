@@ -4,7 +4,7 @@ function initHeroSwiper() {
   let heroSwiper = new Swiper('.swiper-hero', {
 
     pagination: {
-      el: '.swiper-pagination',
+      el: '.hero__pagination',
       clickable: true,
     },
 
@@ -59,12 +59,46 @@ function initReviewsSwiper() {
     grabCursor: true,
     slidesPerView: 1,
     loop: true,
-    // speed: 1500,
-    // autoplay: {
-    //   delay: 5000,
-    // },
+    speed: 1500,
+    autoplay: {
+      delay: 5000,
+    },
   });
   return reviewsSwiper;
 }
 
-export {initHeroSwiper, initPartnersSwiper, initReviewsSwiper};
+function initProjectsSwiper() {
+
+  let projectsSwiper = new Swiper('.swiper-projects', {
+    pagination: {
+      el: '.projects__pagination',
+      clickable: true,
+    },
+    direction: 'horizontal',
+    loop: true,
+    grabCursor: true,
+    speed: 2000,
+
+    // autoplay: {
+    //   delay: 3000,
+    // },
+
+    breakpoints: {
+      390: {
+        spaceBetween: 20,
+        slidesPerView: 1,
+      },
+      768: {
+        spaceBetween: 24,
+        slidesPerView: 2,
+      },
+      1920: {
+        spaceBetween: 50,
+        slidesPerView: 2,
+      },
+    },
+  });
+  return projectsSwiper;
+}
+
+export {initHeroSwiper, initPartnersSwiper, initReviewsSwiper, initProjectsSwiper};

@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-@mixin distribute-on-circle( $nb-items, $circle-size, $item-size) { //убрать в mixin
+@mixin distribute-on-circle( $nb-items, $circle-size, $item-size) {
   $half-item: calc($item-size / 2);
   $half-parent: calc($circle-size / 2);
   position: relative;

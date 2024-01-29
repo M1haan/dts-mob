@@ -2,19 +2,10 @@
   position: relative;
   display: flex;
 
-  /* @media screen and (max-width: 767px) {
-    width: 100%;
-  } */
-
   label {
     display: flex;
     align-items: center;
     width: 100%;
-
-    /* @media screen and (max-width: 767px) {
-      align-items: flex-start;
-      flex-direction: column;
-    } */
 
     input {
       flex-grow: 1;
@@ -28,10 +19,9 @@
       border-bottom: 2px solid $default-white-color;
       transition: border 0.3s ease;
 
-     /*  @media screen and (max-width: 767px) {
-        max-width: unset;
-        width: 100%;
-      } */
+      @media (min-width: $tablet-width) {
+        padding: 10px 10px 14px 0;
+      }
 
       &:hover {
         outline: none;
@@ -49,13 +39,6 @@
     }
   }
 
-
-  /* &__label {
-    @media screen and (max-width: 767px) {
-      margin: 0 0 18px 0;
-    }
-  } */
-
   &__error {
     position: absolute;
     right: 0;
@@ -63,10 +46,6 @@
     color: $color-error;
     opacity: 0;
     transition: opacity 0.3s ease;
-
-    /* @media screen and (max-width: 767px) {
-      bottom: 20px;
-    } */
   }
 
   &.is-invalid {

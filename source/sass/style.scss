@@ -3,12 +3,12 @@
 @import "global/global";
 @import "global/fonts";
 @import "global/mixins";
-@import "global/visually-hidden";
+@import "global/utils";
 @import "global/data-tabs";
 @import "global/data-accordion";
+@import "global/modal";
 
 /* BLOCKS */
-@import "blocks/navigation";
 @import "blocks/header";
 @import "blocks/hero";
 @import "blocks/button";
@@ -25,7 +25,7 @@
 @import "blocks/custom-select";
 @import "blocks/reviews";
 @import "blocks/faq";
-@import "blocks/modal";
+@import "blocks/modal-projects";
 @import "blocks/footer";
 // @import "blocks/adaptive-runner";
 

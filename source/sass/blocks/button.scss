@@ -8,7 +8,7 @@
   position: relative;
 
   &--accent {
-    background: linear-gradient(90deg, #20b985 0%, #2c9cab 90.1%, #2ba2b2 99.99%);
+    background: linear-gradient(90deg, #20b985 0%, #2c9cab 90%, #2ba2b2 100%);
 
     &::after {
       content: "";

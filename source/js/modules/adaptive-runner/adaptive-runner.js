@@ -25,29 +25,55 @@ export class AdaptiveRunner {
     });
   }
 
-  templateRunner() {
+  /* templateRunner() {
     return (
       `<div class="about__tabs tabs adaptive-runner" data-adaptive-runner="runner">
-        <div class="adaptive-runner__inner"></div>
-        <button class="about__tab" type="button" data-tabs="control" data-index="0" data-adaptive-runner="checkpoint">
-        <img class="about__icon" src="./img/sprite/about-tab1.svg" width="99" height="99" alt="">
-      </button>
-      <button class="about__tab" type="button" data-tabs="control" data-index="1" data-adaptive-runner="checkpoint">
-        <img class="about__icon" src="./img/sprite/about-tab2.svg" width="99" height="99" alt="">
-      </button>
-      <button class="about__tab" type="button" data-tabs="control" data-index="2" data-adaptive-runner="checkpoint">
-        <img class="about__icon" src="./img/sprite/about-tab3.svg" width="99" height="99" alt="">
-      </button>
-      <button class="about__tab" type="button" data-tabs="control" data-index="3" data-adaptive-runner="checkpoint">
-        <img class="about__icon" src="./img/sprite/about-tab4.svg" width="99" height="99" alt="">
-      </button>
-      <button class="about__tab" type="button" data-tabs="control" data-index="4" data-adaptive-runner="checkpoint">
-        <img class="about__icon" src="./img/sprite/about-tab5.svg" width="99" height="99" alt="">
-      </button>
-      <button class="about__tab" type="button" data-tabs="control" data-index="5" data-adaptive-runner="checkpoint">
-        <img class="about__icon" src="./img/sprite/about-tab6.svg" width="99" height="99" alt="">
-      </button>
-       </div>`
+          <div class="adaptive-runner__inner"></div>
+          <button class="about__tab" type="button" data-tabs="control" data-index="0" data-adaptive-runner="checkpoint">
+          <img class="about__icon" src="./img/sprite/about-tab1.svg" alt="">
+        </button>
+        <button class="about__tab" type="button" data-tabs="control" data-index="1" data-adaptive-runner="checkpoint">
+          <img class="about__icon" src="./img/sprite/about-tab2.svg" alt="">
+        </button>
+        <button class="about__tab" type="button" data-tabs="control" data-index="2" data-adaptive-runner="checkpoint">
+          <img class="about__icon" src="./img/sprite/about-tab3.svg" alt="">
+        </button>
+        <button class="about__tab" type="button" data-tabs="control" data-index="3" data-adaptive-runner="checkpoint">
+          <img class="about__icon" src="./img/sprite/about-tab4.svg" alt="">
+        </button>
+        <button class="about__tab" type="button" data-tabs="control" data-index="4" data-adaptive-runner="checkpoint">
+          <img class="about__icon" src="./img/sprite/about-tab5.svg" alt="">
+        </button>
+        <button class="about__tab" type="button" data-tabs="control" data-index="5" data-adaptive-runner="checkpoint">
+          <img class="about__icon" src="./img/sprite/about-tab6.svg" alt="">
+        </button>
+         </div>`
+    );
+  } */
+
+  templateRunner() {
+    return (
+      `<div class="about__tabs tabs adaptive-runner" ${window.innerWidth >= 768 ? '' : 'data-adaptive-runner="runner"'}>
+      <div class="adaptive-runner__inner"></div>
+      <button class="about__tab" type="button" data-tabs="control" data-index="0" data-adaptive-runner="checkpoint">
+      <img class="about__icon" src="./img/sprite/about-tab1.svg" alt="">
+    </button>
+    <button class="about__tab" type="button" data-tabs="control" data-index="1" data-adaptive-runner="checkpoint">
+      <img class="about__icon" src="./img/sprite/about-tab2.svg" alt="">
+    </button>
+    <button class="about__tab" type="button" data-tabs="control" data-index="2" data-adaptive-runner="checkpoint">
+      <img class="about__icon" src="./img/sprite/about-tab3.svg" alt="">
+    </button>
+    <button class="about__tab" type="button" data-tabs="control" data-index="3" data-adaptive-runner="checkpoint">
+      <img class="about__icon" src="./img/sprite/about-tab4.svg" alt="">
+    </button>
+    <button class="about__tab" type="button" data-tabs="control" data-index="4" data-adaptive-runner="checkpoint">
+      <img class="about__icon" src="./img/sprite/about-tab5.svg" alt="">
+    </button>
+    <button class="about__tab" type="button" data-tabs="control" data-index="5" data-adaptive-runner="checkpoint">
+      <img class="about__icon" src="./img/sprite/about-tab6.svg" alt="">
+    </button>
+     </div>`
     );
   }
 

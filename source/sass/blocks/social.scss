@@ -8,28 +8,48 @@
   @media (max-width: $tablet-width) {
     order: 2;
   }
-}
 
-.social--visibility {
+  &--visibility {
+    @media (max-width: $desktop-width) {
+      display: flex;
+      position: absolute;
+      top: 345px;
+      left: 20px;
+      z-index: 3;
+    }
 
-  @media (min-width: $mobile-width) and (max-width: $tablet-width) {
-    position: absolute;
-    top: 23px;
-    right: 100px;
+    @media (max-width: $mobile-width) {
+      display: none;
+    }
   }
 
-  @media (max-width: $mobile-width) {
+  &--no-visibility {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      display: flex;
+      right: 125px;
+    }
   }
 }
 
 .social__item {
   background: linear-gradient(180deg, #20b985 50%, #2ba2b2 100%);
   border-radius: 6px;
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .social__icon {
-  margin: 10px;
+  margin: 13px;
+
+  @media (min-width: $desktop-width) {
+    margin: 10px;
+  }
 }

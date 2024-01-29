@@ -1,6 +1,26 @@
+.projects {
+  &__pagination {
+    bottom: 0;
+    left: calc(50% - 145px);
+
+    .swiper-pagination-bullet {
+      background-color: $default-white-color;
+      width: 18px;
+      height: 18px;
+      border-radius: 0;
+      opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: linear-gradient(90deg, #20b985 0%, #2c9cab 90%, #2ba2b2 100%);
+    }
+  }
+}
+
 .projects__wrapper {
   max-width: 360px;
   padding: 43px 15px 80px;
+  margin: 0 auto;
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
@@ -10,7 +30,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 80px 205px;
+    padding: 80px 205px 165px;
     max-width: 1500px;
     margin: 0 auto;
   }
@@ -34,77 +54,58 @@
 
 .projects__list {
   @include reset-list;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 50px;
-
-  @media (min-width: $tablet-width) {
-    gap: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
-  }
+  padding-bottom: 50px;
 }
 
 .projects__item {
   max-width: 360px;
+  min-height: 570px;
   padding: 0 20px 23px 20px;
-  background: rgba(43, 162, 178, 0.10);
+  background: rgba(43, 162, 178, 0.1);
   box-shadow: 0px 4px 25px 0px rgba(255, 255, 255, 0.25) inset;
   backdrop-filter: blur(25px);
-  display: flex;
-  flex-direction: column;
-  border-radius: 2%; // перепроверить
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 108px min-content min-content;
+  border-radius: 10px;
   box-sizing: border-box;
   border: 1px solid $default-white-color;
-  min-height: 570px; //ВРЕМЕННО
 
   @media (min-width: $tablet-width) {
-    min-width: 340px;
+    max-width: 337px;
+    min-height: 380px;
     padding: 0 14px 16px 14px;
+    grid-template-rows: 71px min-content min-content;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 732px;
+    min-height: 835px;
     padding:  0 30px 30px 30px;
+    grid-template-rows: 156px min-content min-content;
   }
 
-  p {
-    font-family: $Manrope-ff;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    // padding: 27px 0;
-    margin: 0;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 108px;
+    background: url('/img/projects-background-title.webp') no-repeat;
+    background-size: cover;
+    z-index: -1;
+    border-radius: 10px;
 
     @media (min-width: $tablet-width) {
-      font-size: 14px;
-      font-weight: 500;
+      width: 335px;
+      height: 71px;
     }
 
     @media (min-width: $desktop-width) {
-      font-size: 28px;
-      margin: 0;
-      padding: 15px 0;
-    }
-
-    span {
-      font-family: $Nunito-ff;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 300;
-      line-height: normal;
-
-
-      @media (min-width: $tablet-width) {
-        font-size: 14px;
-      }
-
-      @media (min-width: $desktop-width) {
-        font-size: 28px;
-      }
+      width: 723px;
+      height: 156px;
     }
   }
 }
@@ -118,63 +119,121 @@
   line-height: normal;
   position: relative;
   margin: 0;
-  padding: 27px 0;
-
+  align-self: center;
 
   @media (min-width: $tablet-width) {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 34px;
-    margin: 0;
-    padding: 30px 40px;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -20px;
-    right: 0;
-    width: 357px;
-    height: 108px;
-    background: url('/img/projects-background-title.png');
-    z-index: -1;
-    border-radius: 10px;
-
-    @media (min-width: $tablet-width) {
-      top: 0;
-      left: -30px;
-      right: 0;
-      width: 337px;
-      height: 100%;
-    }
-
-    @media (min-width: $desktop-width) {
-      top: 0;
-      left: -30px;
-      right: 0;
-      width: 732px;
-      height: 100%;
-    }
+    padding: 0 40px;
   }
 }
 
 .projects__image {
-  position: relative;
-  bottom: -11px;
-  width: 303px;
-  height: 220px;
+  position: absolute;
+  bottom: 0px;
+  width: 328px;
+  height: 240px;
+  left: 16px;
 
+  @media (min-width: $tablet-width) {
+    width: 280px;
+    height: 200px;
+    left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
+    height: 440px;
+    left: 62px;
+  }
 }
 
 .projects__button {
-  padding: 23px 88px 23px 66px;
+  padding: 16px 60px 16px 45px;
   align-self: center;
   font-family: $Nunito-ff;
   font-size: 12px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  width: fit-content;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 10px;
+    padding: 13px 50px 13px 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding: 22px 88px 22px 66px;
+  }
+}
+
+.projects__description-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+  padding-top: 23px;
+  margin-bottom: 175px;
+  gap: 30px;
+
+  @media (min-width: $tablet-width) {
+    gap: 15px;
+    padding-top: 18px;
+    margin-bottom: 160px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
+    gap: 38px;
+    margin-bottom: 365px;
+  }
+}
+
+.projects__description-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.projects__key {
+  font-family: $Manrope-ff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+  }
+}
+
+.projects__value {
+  font-family: $Nunito-ff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+  }
 }

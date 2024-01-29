@@ -1,5 +1,5 @@
 .partners {
-  background-image: url("/img/partners-background.png");
+  background-image: url("/img/partners-background.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -7,13 +7,17 @@
 }
 .partners__container {
   padding: 35px 15px;
+  min-width: 360px;
 
   @media (min-width: $tablet-width) {
     padding: 40px 35px 30px;
+    min-width: 698px;
   }
 
   @media (min-width: $desktop-width) {
+    max-width: 1780px;
     padding: 85px 235px;
+    margin: 0 auto;
   }
 }
 
