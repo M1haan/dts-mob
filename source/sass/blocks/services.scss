@@ -92,6 +92,7 @@
   }
 
   svg {
+    color: $default-white-color;
     width: 18px;
     height: 14px;
 
@@ -195,7 +196,7 @@
       content: "";
       position: absolute;
       top: -2%;
-      right: 26%;
+      right: 175px;
       width: 128px;
       height: 80px;
       background-image: url("/img/svg/services-circle.svg");
@@ -216,7 +217,7 @@
 
   img {
     width: 100%;
-    height: 154px;
+    height: auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -225,7 +226,6 @@
 
     img {
       width: 261px;
-      height: 154px;
     }
   }
 
@@ -255,5 +255,3 @@
     }
   }
 }
-
-

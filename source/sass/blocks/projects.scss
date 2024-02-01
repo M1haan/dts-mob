@@ -62,7 +62,7 @@
   min-height: 570px;
   padding: 0 20px 23px 20px;
   background: rgba(43, 162, 178, 0.1);
-  box-shadow: 0px 4px 25px 0px rgba(255, 255, 255, 0.25) inset;
+  box-shadow: 0 4px 25px 0 rgba(255, 255, 255, 0.25) inset;
   backdrop-filter: blur(25px);
   display: grid;
   grid-template-columns: 1fr;
@@ -81,19 +81,19 @@
   @media (min-width: $desktop-width) {
     max-width: 732px;
     min-height: 835px;
-    padding:  0 30px 30px 30px;
+    padding: 0 30px 30px 30px;
     grid-template-rows: 156px min-content min-content;
   }
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
     height: 108px;
-    background: url('/img/projects-background-title.webp') no-repeat;
+    background: url("/img/projects-background-title.webp") no-repeat;
     background-size: cover;
     z-index: -1;
     border-radius: 10px;
@@ -133,7 +133,7 @@
 
 .projects__image {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   width: 328px;
   height: 240px;
   left: 16px;

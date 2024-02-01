@@ -19,7 +19,7 @@
 
   @media (min-width: $tablet-width) {
     min-width: 708px;
-    padding: 40px 30px;
+    padding: 11px 30px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -106,7 +106,6 @@
     width: 26px;
     height: 26px;
     background-image: url("/img/sprite/menu-close.svg");
-
   }
 
   @media (min-width: $desktop-width) {
@@ -155,7 +154,7 @@
     background-color: transparent;
   }
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: 1919px) {
     &::after {
       content: "";
       position: absolute;

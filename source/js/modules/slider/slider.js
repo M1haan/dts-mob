@@ -1,5 +1,3 @@
-// import Swiper from 'swiper';
-
 function initHeroSwiper() {
   let heroSwiper = new Swiper('.swiper-hero', {
 
@@ -7,10 +5,6 @@ function initHeroSwiper() {
       el: '.hero__pagination',
       clickable: true,
     },
-
-    // autoplay: {
-    //   delay: 5000,
-    // },
 
     direction: 'horizontal',
     grabCursor: true,
@@ -31,7 +25,7 @@ function initPartnersSwiper() {
     speed: 2000,
 
     autoplay: {
-      delay: 3000,
+      delay: 0,
     },
 
     breakpoints: {
@@ -61,7 +55,7 @@ function initReviewsSwiper() {
     loop: true,
     speed: 1500,
     autoplay: {
-      delay: 5000,
+      delay: 1000,
     },
   });
   return reviewsSwiper;
@@ -78,10 +72,6 @@ function initProjectsSwiper() {
     loop: true,
     grabCursor: true,
     speed: 2000,
-
-    // autoplay: {
-    //   delay: 3000,
-    // },
 
     breakpoints: {
       390: {

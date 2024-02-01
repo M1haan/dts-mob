@@ -3,8 +3,9 @@
   font-weight: 300;
   font-family: "Nunito";
   font-display: swap;
-  src: url("../fonts/Nunito-Light.woff2") format("woff2"),
-    url("../fonts/Nunito-Light.woff") format("woff");
+  src:
+    url("../fonts/Nunito/Nunito-Light.woff2") format("woff2"),
+    url("../fonts/Nunito/Nunito-Light.woff") format("woff");
 }
 
 @font-face {
@@ -12,8 +13,9 @@
   font-weight: 400;
   font-family: "Nunito";
   font-display: swap;
-  src: url("../fonts/Nunito-Regular.woff2") format("woff2"),
-    url("../fonts/Nunito-Regular.woff") format("woff");
+  src:
+    url("../fonts/Nunito/Nunito-Regular.woff2") format("woff2"),
+    url("../fonts/Nunito/Nunito-Regular.woff") format("woff");
 }
 
 @font-face {
@@ -21,8 +23,9 @@
   font-weight: 500;
   font-family: "Nunito";
   font-display: swap;
-  src: url("../fonts/Nunito-Medium.woff2") format("woff2"),
-    url("../fonts/Nunito-Medium.woff") format("woff");
+  src:
+    url("../fonts/Nunito/Nunito-Medium.woff2") format("woff2"),
+    url("../fonts/Nunito/Nunito-Medium.woff") format("woff");
 }
 
 
@@ -31,8 +34,9 @@
   font-weight: 700;
   font-family: "Nunito";
   font-display: swap;
-  src: url("../fonts/Nunito-Bold.woff2") format("woff2"),
-    url("../fonts/Nunito-Bold.woff") format("woff");
+  src:
+    url("../fonts/Nunito/Nunito-Bold.woff2") format("woff2"),
+    url("../fonts/Nunito/Nunito-Bold.woff") format("woff");
 }
 
 /* ______________________ */
@@ -42,8 +46,9 @@
   font-weight: 500;
   font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/Manrope-Medium.woff2") format("woff2"),
-    url("../fonts/Manrope-Medium.woff") format("woff");
+  src:
+    url("../fonts/Manrope/Manrope-Medium.woff2") format("woff2"),
+    url("../fonts/Manrope/Manrope-Medium.woff") format("woff");
 }
 
 @font-face {
@@ -51,8 +56,9 @@
   font-weight: 600;
   font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"),
-    url("../fonts/Manrope-SemiBold.woff") format("woff");
+  src:
+    url("../fonts/Manrope/Manrope-SemiBold.woff2") format("woff2"),
+    url("../fonts/Manrope/Manrope-SemiBold.woff") format("woff");
 }
 
 @font-face {
@@ -60,8 +66,9 @@
   font-weight: 700;
   font-family: "Manrope";
   font-display: swap;
-  src: url("../fonts/Manrope-Bold.woff2") format("woff2"),
-    url("../fonts/Manrope-Bold.woff") format("woff");
+  src:
+    url("../fonts/Manrope/Manrope-Bold.woff2") format("woff2"),
+    url("../fonts/Manrope/Manrope-Bold.woff") format("woff");
 }
 
 /* ______________________ */
@@ -71,8 +78,9 @@
   font-weight: 300;
   font-family: "Inter";
   font-display: swap;
-  src: url("../fonts/Inter-Light.woff2") format("woff2"),
-    url("../fonts/Inter-Light.woff") format("woff");
+  src:
+    url("../fonts/Inter/Inter-Light.woff2") format("woff2"),
+    url("../fonts/Inter/Inter-Light.woff") format("woff");
 }
 
 @font-face {
@@ -80,6 +88,7 @@
   font-weight: 500;
   font-family: "Inter";
   font-display: swap;
-  src: url("../fonts/Inter-Medium.woff2") format("woff2"),
-    url("../fonts/Inter-Medium.woff") format("woff");
+  src:
+    url("../fonts/Inter/Inter-Medium.woff2") format("woff2"),
+    url("../fonts/Inter/Inter-Medium.woff") format("woff");
 }

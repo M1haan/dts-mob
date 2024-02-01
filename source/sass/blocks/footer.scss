@@ -16,7 +16,6 @@
   }
 
   @media (min-width: $tablet-width) {
-
     &::before {
       content: "";
       position: absolute;
@@ -34,7 +33,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &::before {
       content: "";
       position: absolute;
@@ -64,14 +62,18 @@
     max-width: 698px;
     display: grid;
     grid-template-areas: "logo address nav"
-    "req address nav"
-    "social social presentation"
-    ". btn ."
-    "politic politic politic";
+      "req address nav"
+      "social social presentation"
+      ". btn ."
+      "politic politic politic";
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1780px;
+    justify-content: space-between;
+    grid-template-areas: "logo address nav presentation social"
+      "req address nav presentation btn"
+      "req address nav presentation politic";
   }
 }
 
@@ -89,6 +91,10 @@
     background-size: cover;
     width: 100%;
     height: 2px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -246,6 +252,10 @@
     margin: 0 auto 20px;
     padding: 20px 136px;
   }
+
+  @media (min-width: $desktop-width) {
+    height: fit-content;
+  }
 }
 
 .footer__politic {
@@ -267,7 +277,7 @@
   border-radius: 5px;
   border: 1px solid $color-accent;
   background: #080808;
-  box-shadow: 0px 2px 0px 0px #2BA2B2;
+  box-shadow: 0 2px 0 0 #2ba2b2;
   color: $color-accent;
   text-decoration: none;
   font-family: $Nunito-ff;
@@ -282,5 +292,9 @@
 
   @media (min-width: $tablet-width) {
     grid-area: presentation;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/2;
   }
 }

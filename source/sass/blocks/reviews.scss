@@ -21,7 +21,6 @@
   font-weight: 700;
   text-align: center;
   margin: 0;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 26px;
@@ -105,7 +104,7 @@
     background: url("/img/svg/reviews-for-image.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     z-index: -1;
     width: 356px;
     height: 323px;
@@ -123,7 +122,9 @@
   &::before {
     content: "";
     position: absolute;
-    background: url("/img/svg/reviews-star.svg") no-repeat center;
+    background: url("/img/svg/reviews-star.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     top: -15%;
     left: -15%;
@@ -243,5 +244,3 @@
     }
   }
 }
-
-

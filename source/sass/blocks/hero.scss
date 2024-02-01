@@ -11,7 +11,7 @@
     background-position: center;
     background-size: cover;
     width: 100%;
-    min-height: 789px;
+    min-height: 920px;
     z-index: -1;
     display: block;
 
@@ -48,7 +48,7 @@
 
 
   .swiper-pagination {
-    bottom: 60px;
+    bottom: 10px;
     left: calc(50% - 115px);
     gap: 50px;
     counter-reset: index;
@@ -59,10 +59,10 @@
     }
 
     @media (min-width: $desktop-width) {
-      bottom: 20px;
+      bottom: 0;
       left: 150px;
     }
-   /*  &::after {
+    /*&::after {
       content: "";
       width: 100%;
       height: 2px;
@@ -94,7 +94,7 @@
         top: -15px;
         left: 8px;
         z-index: -1;
-    }
+      }
 
       &-active {
         background-color: $color-accent;
@@ -114,13 +114,14 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1338px;
-    margin-bottom: 110px;
+    margin-bottom: 170px;
   }
 }
 
 .hero__slider-wrapper {
   width: 100%;
   display: flex;
+
   @include reset-list;
 
   &--nojs {
@@ -152,7 +153,13 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: min-content;
+  min-height: 400px;
+  margin-bottom: 50px;
+  align-items: end;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     min-height: 480px;
@@ -199,7 +206,6 @@
     padding: 26px 69px;
     width: fit-content;
     align-self: end;
-
   }
 }
 

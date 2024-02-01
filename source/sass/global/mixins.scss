@@ -24,8 +24,9 @@
     height: $item-size;
     margin: -$half-item;
   }
-    $angle: calc(360 / $nb-items);
-    $rot: 80;
+  $angle: calc(360 / $nb-items);
+  $rot: 80;
+
   @for $i from 1 through $nb-items {
     >:nth-of-type(#{$i}) {
       transform: rotate($rot * 1deg) translate($half-parent) rotate($rot * -1deg);

@@ -36,7 +36,7 @@ showMore.addEventListener('click', () => {
 const reviewsShowMore = document.querySelectorAll('.reviews__button');
 
 const reviewsMoreLinkClickHandler = (evt) => {
-  const element = evt.target.closest('a.reviews__button');
+  const element = evt.target.closest('button.reviews__button');
 
   if (!element) {
     return;

@@ -10,16 +10,13 @@
   flex-direction: column;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  transform: scale(1.1);
+  transform: scale(1.1) translateZ(0);
   visibility: hidden;
   opacity: 0;
   transition: opacity 0.6s cubic-bezier(0.55, 0, 0.1, 1), transform 0.6s cubic-bezier(0.55, 0, 0.1, 1), visibility 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   pointer-events: none;
   -ms-overflow-style: none;
   scrollbar-width: none;
-
-
-  transform: translateZ(0);
   background-color: rgba(#000000, 0.6);
 
   &::-webkit-scrollbar {
@@ -84,14 +81,12 @@
     box-sizing: border-box;
     padding: 0 20px 23px 20px;
     background: rgba(43, 162, 178, 0.1);
-    box-shadow: 0px 4px 25px 0px rgba(255, 255, 255, 0.25) inset;
+    box-shadow: 0 4px 25px 0 rgba(255, 255, 255, 0.25) inset;
     backdrop-filter: blur(25px);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 108px min-content min-content;
     border-radius: 10px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     border: 1px solid #ffffff;
 
     @media (min-width: $tablet-width) {
@@ -105,19 +100,19 @@
       display: grid;
       grid-template-columns: 1fr 420px;
       border-radius: 25px;
-      grid-template-rows: 156px min-content min-content;
+      grid-template-rows: 100px min-content min-content;
     }
 
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       width: 100%;
       height: 108px;
-      background: url('/img/projects-background-title.webp') no-repeat;
+      background: url("/img/projects-background-title.webp") no-repeat;
       background-size: cover;
       z-index: -1;
       border-radius: 10px;
@@ -139,6 +134,7 @@
 
     @media (min-width: $tablet-width) {
       grid-column: 1/2;
+      margin-bottom: 300px;
     }
 
     @media (min-width: $desktop-width) {
@@ -153,14 +149,22 @@
 
   .projects__key,
   .projects__value {
-
     @media (min-width: $desktop-width) {
       font-size: 22px;
     }
   }
 
   .projects__image {
+    object-fit: contain;
+
     @media (min-width: $tablet-width) {
+      bottom: 5px;
+      left: calc(50% - 130px);
+      width: 260px;
+      height: auto;
+    }
+
+    @media (min-width: $desktop-width) {
       grid-column: 2/3;
       top: 180px;
       left: 20px;

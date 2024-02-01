@@ -71,8 +71,6 @@
   }
 }
 
-
-
 .faq__item {
   display: flex;
   flex-direction: column;
@@ -129,19 +127,19 @@
 .faq__item.is-active {
   position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      right: 0;
-      background: url("/img/faq-background.webp") no-repeat;
-      background-size: cover;
-      width: 330px;
-      height: 280px;
-      z-index: -1;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("/img/faq-background.webp") no-repeat;
+    background-size: cover;
+    width: 330px;
+    height: 280px;
+    z-index: -1;
+  }
 
-  .faq__button  svg{
+  .faq__button svg {
     transform: rotate(-180deg);
   }
 

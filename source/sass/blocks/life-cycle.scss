@@ -79,6 +79,14 @@
   @media (min-width: $desktop-width) {
     padding: 50px 0;
   }
+
+  img {
+    max-width: 360px;
+
+    @media (min-width: $tablet-width) {
+      max-width: 308px;
+    }
+  }
 }
 
 .life-cycle__image {
@@ -95,45 +103,6 @@
     background-color: rgba(32, 185, 133, 0.69);
     filter: blur(130px);
     z-index: -1;
-  }
-}
-
-.life-cycle__item:nth-child(odd):not(:last-child) .life-cycle__image::before {
-  @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    width: 384px;
-    height: 352px;
-    top: 75%;
-    right: -40%;
-    background: url(/img/svg/life-cycle-line-odd.svg);
-    background-size: cover;
-    z-index: -1;
-    transform: rotate(180deg);
-  }
-}
-
-.life-cycle__item:nth-child(even):not(:last-child).is-visible .life-cycle__image::before {
-  @media (min-width: $desktop-width) {
-    content: "";
-    position: absolute;
-    width: 670px;
-    height: 299px;
-    top: 70%;
-    left: -48%;
-    background: url("/img/svg/life-cycle-line-even.svg");
-    background-size: cover;
-    z-index: -1;
-  }
-}
-
-.life-cycle__item {
-  img {
-    max-width: 360px;
-
-    @media (min-width: $tablet-width) {
-      max-width: 308px;
-    }
   }
 }
 
@@ -189,6 +158,10 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+
+    @media (min-width: $desktop-width) {
+      overflow: visible;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -202,22 +175,22 @@
 }
 
 .life-cycle__link {
-  // display: none;
+  position: relative;
+  z-index: 2;
+  padding: 9px 63px;
+  border: 1px solid $default-white-color;
+  color: $default-white-color;
+  font-family: $Nunito-ff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  display: block;
+  width: fit-content;
 
-  // @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    position: relative;
-    z-index: 2;
-    padding: 9px 63px;
-    border: 1px solid $default-white-color;
-    color: $default-white-color;
-    font-family: $Nunito-ff;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    display: block;
-    width: fit-content;
-  // }
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .life-cycle__item:nth-child(n+3) {

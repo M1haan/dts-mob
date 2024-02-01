@@ -7,12 +7,9 @@
   font-weight: 300;
   line-height: normal;
   width: 100%;
-  // padding: 14px 0 28px;
-  // margin: 0 0 44px 0;
   border-bottom: 2px solid $default-white-color;
 
   @media screen and (max-width: 767px) {
-    // padding: 4px 0 14px;
     width: 100%;
   }
 
@@ -120,28 +117,28 @@
     line-height: normal;
 
     &[aria-selected="true"] {
-      background: linear-gradient(91deg, #20B985 1.45%, #2BA2B2 99%);
+      background: linear-gradient(91deg, #20b985 1.45%, #2ba2b2 99%);
       color: $default-white-color;
 
       @media (hover: hover) {
         &:hover:not(.focus-visible) {
-          background: linear-gradient(91deg, #20B985 1.45%, #2BA2B2 99%);
+          background: linear-gradient(91deg, #20b985 1.45%, #2ba2b2 99%);
         }
       }
 
       &.focus-visible:focus {
-        background: linear-gradient(91deg, #20B985 1.45%, #2BA2B2 99%);
+        background: linear-gradient(91deg, #20b985 1.45%, #2ba2b2 99%);
       }
     }
 
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
-        background: linear-gradient(91deg, #20B985 1.45%, #2BA2B2 99%);
+        background: linear-gradient(91deg, #20b985 1.45%, #2ba2b2 99%);
       }
     }
 
     &.focus-visible:focus {
-      background: linear-gradient(91deg, #20B985 1.45%, #2BA2B2 99%);
+      background: linear-gradient(91deg, #20b985 1.45%, #2ba2b2 99%);
       color: $default-white-color;
     }
   }

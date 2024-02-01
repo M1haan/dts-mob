@@ -1,6 +1,7 @@
 import {Validator} from './validator';
 import {callbacks} from './callback';
 import {initPhoneInput} from './init-phone-input';
+import {showSuccessMessage} from '../../main';
 
 export class Form {
   constructor() {
@@ -93,6 +94,11 @@ export class Form {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
       this._onFormSubmit(event, callback);
+
+      if (this.validateForm(event.target)) { // проверяем, прошла ли форма валидацию
+        // console.log('Форма отправлена успешно');
+        showSuccessMessage();
+      }
     });
 
     form.addEventListener('input', (event) => {

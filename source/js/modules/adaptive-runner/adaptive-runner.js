@@ -73,7 +73,7 @@ export class AdaptiveRunner {
     <button class="about__tab" type="button" data-tabs="control" data-index="5" data-adaptive-runner="checkpoint">
       <img class="about__icon" src="./img/sprite/about-tab6.svg" alt="">
     </button>
-     </div>`
+    </div>`
     );
   }
 
