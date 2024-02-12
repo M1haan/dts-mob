@@ -21,22 +21,22 @@
     right: 0;
     width: 100%;
     height: 100%;
-    background-image: url("/img/about-mobile-background.webp");
+    background-image: url("../img/about-mobile-background.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     z-index: -2;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/about-mobile-background@2x.webp");
+      background-image: url("../img/about-mobile-background@2x.webp");
     }
 
     @media (min-width: $desktop-width) {
-      background-image: url("/img/about-desktop-background.webp");
+      background-image: url("../img/about-desktop-background.webp");
 
       @media (min-resolution: 2dppx) {
         height: 697px;
-        background-image: url("/img/about-desktop-background@2x.webp");
+        background-image: url("../img/about-desktop-background@2x.webp");
       }
     }
   }
@@ -49,14 +49,14 @@
       right: 10%;
       width: 317px;
       height: 404px;
-      background-image: url("/img/about-astronaut.webp");
+      background-image: url("../img/about-astronaut.webp");
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
       z-index: 2;
 
       @media (min-resolution: 2dppx) {
-        background-image: url("/img/about-astronaut@2x.webp");
+        background-image: url("../img/about-astronaut@2x.webp");
       }
     }
   }
@@ -96,6 +96,7 @@
 
   @media (min-width: $tablet-width) {
     gap: 40px;
+    justify-content: flex-end;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,7 +114,7 @@
       width: 360px;
       height: 375px;
       position: absolute;
-      background: url("/img/svg/about-circle.svg");
+      background: url("../img/svg/about-circle.svg");
       z-index: -1;
     }
 

@@ -5,10 +5,6 @@
 
   @include reset-list;
 
-  @media (max-width: $tablet-width) {
-    order: 2;
-  }
-
   &--visibility {
     @media (max-width: $desktop-width) {
       display: flex;

@@ -1,7 +1,7 @@
 import {Validator} from './validator';
 import {callbacks} from './callback';
 import {initPhoneInput} from './init-phone-input';
-import {showSuccessMessage} from '../../main';
+import {showSuccessMessage} from '../message/message';
 
 export class Form {
   constructor() {
@@ -97,6 +97,8 @@ export class Form {
 
       if (this.validateForm(event.target)) { // проверяем, прошла ли форма валидацию
         // console.log('Форма отправлена успешно');
+        const modal = document.querySelector('.modal');
+        modal.classList.remove('is-active');
         showSuccessMessage();
       }
     });

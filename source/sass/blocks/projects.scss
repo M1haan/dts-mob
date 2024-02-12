@@ -29,6 +29,12 @@
     gap: 30px;
   }
 
+  @media (min-width: $laptop-width) {
+    padding: 80px 100px;
+    min-width: 1220px;
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 80px 205px 165px;
     max-width: 1500px;
@@ -37,19 +43,7 @@
 }
 
 .projects__title {
-  font-family: $Manrope-ff;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  text-align: center;
-  margin: 0;
   margin-top: 5px;
-
-  @media (min-width: $desktop-width) {
-    font-size: 55px;
-    font-weight: 600;
-  }
 }
 
 .projects__list {
@@ -78,6 +72,13 @@
     grid-template-rows: 71px min-content min-content;
   }
 
+  @media (min-width: $laptop-width) {
+    max-width: 380px;
+    min-height: 380px;
+    padding: 0 14px 16px 14px;
+    grid-template-rows: 71px min-content min-content;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 732px;
     min-height: 835px;
@@ -93,13 +94,18 @@
     right: 0;
     width: 100%;
     height: 108px;
-    background: url("/img/projects-background-title.webp") no-repeat;
+    background: url("../img/projects-background-title.webp") no-repeat;
     background-size: cover;
     z-index: -1;
     border-radius: 10px;
 
     @media (min-width: $tablet-width) {
       width: 335px;
+      height: 71px;
+    }
+
+    @media (min-width: $laptop-width) {
+      width: 378px;
       height: 71px;
     }
 

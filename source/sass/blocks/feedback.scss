@@ -1,6 +1,6 @@
 .feedback {
   color: $default-white-color;
-  background-image: url("/img/feedback-background.webp");
+  background-image: url("../img/feedback-background.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -20,6 +20,11 @@
     grid-template-columns: 1fr min-content;
   }
 
+  @media (min-width: $laptop-width) {
+    min-width: 1220px;
+    padding: 40px 100px 0 100px;
+  }
+
   @media (min-width: $desktop-width) {
     max-width: 1780px;
     grid-template-columns: 2fr 1fr;
@@ -30,10 +35,6 @@
 }
 
 .feedback__title {
-  font-family: $Manrope-ff;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0;
   padding-top: 20px;
   grid-column: 1/-1;
   margin-bottom: 30px;
@@ -41,12 +42,9 @@
   @media (min-width: $tablet-width) {
     justify-self: start;
     margin-bottom: 25px;
-    font-size: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 55px;
-    font-weight: 600;
     justify-self: center;
     padding-top: 0;
     margin-bottom: 80px;
@@ -68,7 +66,7 @@
   &::after {
     content: "";
     position: absolute;
-    background: url("/img/svg/feedback-star.svg") no-repeat center;
+    background: url("../img/svg/feedback-star.svg") no-repeat center;
     background-size: cover;
     width: 46px;
     height: 48px;
@@ -112,7 +110,7 @@
     display: block;
     width: 275px;
     height: 450px;
-    margin-top: -62px;
+    margin-top: -22px;
     clip-path: none;
   }
 
@@ -127,6 +125,7 @@
 
 .form__field {
   margin-bottom: 50px;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 31px;

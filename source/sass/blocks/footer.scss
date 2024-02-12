@@ -6,7 +6,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("/img/footer-background-mobile.webp");
+    background: url("../img/footer-background-mobile.webp");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
@@ -21,10 +21,10 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: url("/img/footer-background-tablet.webp");
+      background: url("../img/footer-background-tablet.webp");
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: top;
       z-index: -1;
       top: 0;
       left: 0;
@@ -38,7 +38,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background: url("/img/footer-background-desktop.webp");
+      background: url("../img/footer-background-desktop.webp");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -50,55 +50,106 @@
   }
 }
 
+.footer__logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__info {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 30px 25px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: min-content max-content 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: initial;
+    display: grid;
+    grid-template-columns: min-content min-content max-content;
+    justify-content: end;
+  }
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  grid-area: block;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 860px;
+    grid-column: span 1 / span 2;
+  }
+}
+
 .footer__wrapper {
   min-width: 360px;
   padding: 23px 15px 15px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 22px 35px 55px;
-    max-width: 698px;
-    display: grid;
-    grid-template-areas: "logo address nav"
-      "req address nav"
-      "social social presentation"
-      ". btn ."
-      "politic politic politic";
+    min-width: 698px;
+  }
+
+  @media (min-width: $laptop-width) {
+    min-width: 1200px;
+    padding: 22px 100px 55px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1780px;
+    padding: 45px 70px 50px;
     justify-content: space-between;
-    grid-template-areas: "logo address nav presentation social"
-      "req address nav presentation btn"
-      "req address nav presentation politic";
+    display: flex;
+    flex-direction: row;
   }
-}
-
-.footer__logo {
-  margin-bottom: 30px;
-  position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    top: 165px;
+    top: 197px;
     left: 0;
     right: 0;
-    background: url("/img/advantages-line.webp") no-repeat;
+    background: url("../img/advantages-line.webp") no-repeat;
     background-size: cover;
     width: 100%;
     height: 2px;
 
     @media (min-width: $tablet-width) {
+      top: 218px;
+    }
+
+    @media (min-width: $laptop-width) {
+      top: 220px;
+    }
+
+    @media (min-width: $desktop-width) {
+      /* transform: rotate(90deg);
+      width: 208px;
+      left: 645px;
+      top: 160px; */
       display: none;
     }
   }
+}
+
+.footer__logo {
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    grid-area: logo;
     margin-bottom: 20px;
 
     svg {
@@ -127,13 +178,7 @@
   display: flex;
   flex-direction: column;
   gap: 3px;
-  max-width: 200px;
   margin-bottom: 45px;
-
-  @media (min-width: $tablet-width) {
-    max-width: 215px;
-    grid-area: req;
-  }
 
   span {
     color: $default-white-color;
@@ -142,6 +187,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    width: max-content;
 
     @media (min-width: $tablet-width) {
       font-size: 16px;
@@ -154,15 +200,13 @@
   }
 }
 
-.footer__social {
-  display: flex;
-  gap: 25px;
-  margin-bottom: 30px;
-  align-items: center;
+.footer__social-list {
+  width: fit-content;
 
-  @media (min-width: $tablet-width) {
-    grid-area: social;
-    justify-self: start;
+  @media (min-width: $desktop-width) {
+    gap: 40px;
+    align-self: start;
+    grid-column: 2/3;
   }
 }
 
@@ -172,7 +216,6 @@
   max-width: 265px;
 
   @media (min-width: $tablet-width) {
-    grid-area: address;
     justify-self: center;
   }
 }
@@ -187,7 +230,6 @@
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
-    grid-area: address;
     justify-self: center;
     max-width: 200px;
   }
@@ -207,9 +249,24 @@
 
 .footer__nav {
   @media (min-width: $tablet-width) {
-    grid-area: nav;
     justify-self: end;
   }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% - 1px);
+      left: -184px;
+      right: 0;
+      background: url("../img/advantages-line.webp") no-repeat;
+      background-size: cover;
+      transform: rotate(90deg);
+      width: 208px;
+      height: 2px;
+  }
+}
 }
 
 .footer__nav-list {
@@ -217,7 +274,6 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-
   margin-bottom: 35px;
 }
 
@@ -230,6 +286,24 @@
   line-height: normal;
 }
 
+.footer__nav-link {
+  color: $default-white-color;
+  font-family: $Nunito-ff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
 .footer__phone {
   text-decoration: none;
   color: $default-white-color;
@@ -238,23 +312,41 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  align-self: center;
+  width: fit-content;
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: -2.6px;
+    justify-self: end;
+    align-self: start;
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
 }
 
 .footer__button {
   padding: 15px 0;
   width: 100%;
   text-align: center;
-  margin-bottom: 35px;
+  grid-row: 3/4;
+  grid-column: 1/-1;
 
   @media (min-width: $tablet-width) {
-    grid-area: btn;
     width: fit-content;
-    margin: 0 auto 20px;
+    margin: 0 auto;
     padding: 20px 136px;
+    grid-column: 1/-1;
   }
 
   @media (min-width: $desktop-width) {
     height: fit-content;
+    justify-self: end;
+    margin: 0;
+    padding: 15px 62px;
+    grid-column: 3/4;
+    grid-row: 2/3;
   }
 }
 
@@ -267,9 +359,17 @@
   line-height: 150%;
   text-decoration-line: underline;
   text-align: center;
+  grid-row: 4/5;
+  grid-column: 1/-1;
 
   @media (min-width: $tablet-width) {
-    grid-area: politic;
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: end;
+    grid-column: 3/4;
+    grid-row: 3/4;
   }
 }
 
@@ -288,13 +388,23 @@
   padding: 8px 0;
   width: 100%;
   text-align: center;
-  margin-bottom: 35px;
+  grid-row: 2/3;
+  grid-column: 1/-1;
 
   @media (min-width: $tablet-width) {
-    grid-area: presentation;
+    width: fit-content;
+    justify-self: end;
+    padding: 8px 80px;
+    grid-row: 1/2;
+    grid-column: 3/4;
   }
 
   @media (min-width: $desktop-width) {
     grid-row: 1/2;
+    padding: 8px 40px;
+    align-self: start;
+    margin: 0;
+    grid-column: 1/2;
+    margin-right: 40px;
   }
 }

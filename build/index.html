@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <title>DST Lab</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.min.css"> <!-- style.min.css -->
-    <!-- <link rel="icon" href="../favicon.ico"> --> <!-- 32×32 -->
-    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-    <!-- <link rel="apple-touch-icon" href="img/favicons/apple.png">
-    <link rel="manifest" href="manifest.webmanifest"> -->
+    <link rel="stylesheet" href="css/style.min.css">
+
     <link rel="preload" href="./fonts/Inter/Inter-Light.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/Inter/Inter-Medium.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/Manrope/Manrope-Bold.woff2" as="font" crossorigin="anonymous">
@@ -76,8 +73,9 @@
     <main class="main-container">
 
       <section class="hero">
-        <h2 class="visually-hidden">Слайдер</h2>
-        <div class="hero__slider-container swiper swiper-initialized swiper-hero">
+        <div class="hero__wrapper">
+        <h1 class="visually-hidden">DST Lab - разработка мобильный приложений</h1>
+        <div class="hero__slider-container swiper swiper-initialized hero-swiper">
           <ul class="hero__slider-wrapper hero__slider-wrapper--nojs swiper-wrapper">
 
             <li class="hero__item swiper-slide">
@@ -85,7 +83,7 @@
                   <img src="./img/hero-slide-1.webp" srcset="./img/hero-slide-1@2x.webp" width="390" height="312" alt="первый слайд.">
                 </div>
                 <div class="hero__text">
-                  <h3 class="hero__title">Разработка мобильных приложений и веб-сервисов</h3>
+                  <h2 class="hero__title">Разработка мобильных приложений и веб-сервисов</h2>
                   <p class="hero__description">Ведущая компания в сфере разработки приложений на iOS и Android. Не боимся сложностей, жадные к технологиям и смелые в новых решениях. Горим идеей создавать крутые IT-проекты для пользователей.</p>
                   <a href="#" class="hero__link button button--accent" data-open-modal="modal-form">Отправить заявку</a>
                 </div>
@@ -96,7 +94,7 @@
                   <img src="./img/hero-slide-2.webp" srcset="./img/hero-slide-2@2x.webp" width="390" height="312" alt="первый слайд.">
                 </div>
                 <div class="hero__text">
-                  <h3 class="hero__title">Мобильные приложения для стартапов и Бизнеса</h3>
+                  <h2 class="hero__title">Мобильные приложения для стартапов и Бизнеса</h2>
                   <p class="hero__description">Мы специализируемся на технически сложных проектах по индивидуальным условиям клиента.</p>
                   <a href="#" class="hero__link button button--accent" data-open-modal="modal-form">Отправить заявку</a>
                 </div>
@@ -107,7 +105,7 @@
                   <img src="./img/hero-slide-3.webp" srcset="./img/hero-slide-3@2x.webp" width="390" height="312" alt="первый слайд.">
                 </div>
                 <div class="hero__text">
-                  <h3 class="hero__title">Топ 3 в Новосибирске по разработке мобильных приложений</h3>
+                  <h2 class="hero__title">Топ 3 в Новосибирске по разработке мобильных приложений</h2>
                   <p class="hero__description">Наша основная специализация - разработка мобильных приложений на заказ. В нашем портфолио более пятидесяти успешных проектов. В DSTlab вы можете заказать разработку мобильного приложения с нуля для увеличения прибыли и повышения лояльности пользователей по самой демократичной цене среди конкурентов.</p>
                   <a href="#" class="hero__link button button--accent" data-open-modal="modal-form">Отправить заявку</a>
                 </div>
@@ -116,6 +114,7 @@
 
           <div class="hero__pagination swiper-pagination"></div>
         </div>
+      </div>
       </section>
 
       <section class="about" id="about">
@@ -185,60 +184,59 @@
       <section class="partners">
         <h2 class="visually-hidden">Партнеры</h2>
           <div class="partners__container ">
-
             <div class="partners__slider swiper swiper-partners">
               <ul class="partners__list partners__list--nojs swiper-wrapper">
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-1.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-1.svg" height="35" alt="Партнер офтальмологический центр
+                  Глазка.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-2.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-2.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-3.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-3.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-4.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-4.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-5.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-5.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-6.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-6.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-7.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-7.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-8.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-8.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-9.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-9.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-10.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-10.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-11.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-11.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-12.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-12.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-13.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-13.svg" height="35" alt="Партнер.">
                 </li>
                 <li class="partners__item swiper-slide">
-                  <img class="partners__image" src="./img/sprite/partner-14.svg" height="35" alt="Партнер.">
+                  <img class="partners__image" src="./img/svg/partner-14.svg" height="35" alt="Партнер.">
                 </li>
               </ul>
             </div>
-
           </div>
       </section>
 
       <section class="life-cycle" id="life-cycle">
         <div class="life-cycle__wrapper">
-          <h2 class="life-cycle__title">Жизненный цикл</h2>
+          <h2 class="life-cycle__title title">Жизненный цикл</h2>
           <ul class="life-cycle__list">
 
             <li class="life-cycle__item">
@@ -365,7 +363,7 @@
       </section>
 
       <section class="projects" id="projects">
-        <h2 class="projects__title">Портфолио</h2>
+        <h2 class="projects__title title">Портфолио</h2>
         <div class="projects__wrapper">
           <div class="projects__slider swiper swiper-projects">
             <ul class="projects__list projects__list--nojs swiper-wrapper">
@@ -385,7 +383,7 @@
                     <dd class="projects__value">Иванов Андрей</dd>
                   </div>
                 </dl>
-                <img class="projects__image" src="./img/projects-item-background-1.webp" srcset="/img/projects-item-background-1@2x.webp" height="436" alt="мобильное приложение.">
+                <img class="projects__image" src="./img/projects-item-background-1.webp" srcset="./img/projects-item-background-1@2x.webp" height="436" alt="мобильное приложение.">
 
                 <button class="projects__button button button--accent"  data-open-modal="projects-card-1">
                   Показать полностью
@@ -410,7 +408,7 @@
                     <dd class="projects__value">Иванов Андрей</dd>
                   </div>
                 </dl>
-                <img class="projects__image" src="./img/projects-item-background-2.webp" srcset="/img/projects-item-background-2@2x.webp" height="436" alt="мобильное приложение.">
+                <img class="projects__image" src="./img/projects-item-background-2.webp" srcset="./img/projects-item-background-2@2x.webp" height="436" alt="мобильное приложение.">
 
                 <button class="projects__button button button--accent" data-open-modal="projects-card-2">
                   Показать полностью
@@ -435,7 +433,7 @@
                     <dd class="projects__value">Иванов Андрей</dd>
                   </div>
                 </dl>
-                <img class="projects__image" src="./img/projects-item-background-1.webp" srcset="/img/projects-item-background-1@2x.webp" height="436" alt="мобильное приложение.">
+                <img class="projects__image" src="./img/projects-item-background-1.webp" srcset="./img/projects-item-background-1@2x.webp" height="436" alt="мобильное приложение.">
 
                 <button class="projects__button button button--accent" data-open-modal="projects-card-3">
                   Показать полностью
@@ -460,7 +458,7 @@
                     <dd class="projects__value">Иванов Андрей</dd>
                   </div>
                 </dl>
-                <img class="projects__image" src="./img/projects-item-background-2.webp" srcset="/img/projects-item-background-2@2x.webp" height="436" alt="мобильное приложение.">
+                <img class="projects__image" src="./img/projects-item-background-2.webp" srcset="./img/projects-item-background-2@2x.webp" height="436" alt="мобильное приложение.">
 
                 <button class="projects__button button button--accent" data-open-modal="projects-card-4">
                   Показать полностью
@@ -485,7 +483,7 @@
                     <dd class="projects__value">Иванов Андрей</dd>
                   </div>
                 </dl>
-                <img class="projects__image" src="./img/projects-item-background-1.webp" srcset="/img/projects-item-background-1@2x.webp" height="436" alt="мобильное приложение.">
+                <img class="projects__image" src="./img/projects-item-background-1.webp" srcset="./img/projects-item-background-1@2x.webp" height="436" alt="мобильное приложение.">
 
                 <button class="projects__button button button--accent" data-open-modal="projects-card-5">
                   Показать полностью
@@ -501,8 +499,8 @@
         </div>
       </section>
 
-      <section class="employees"><!-- ДОБАВИТЬ ДЛЯ ТАБОВ SRCSET -->
-        <h2 class="employees__title">Сотрудники</h2>
+      <section class="employees">
+        <h2 class="employees__title title">Сотрудники</h2>
         <div class="employees__wrapper" data-tabs="parent">
 
           <div class="employees__tabs tabs" data-tabs="controls">
@@ -637,7 +635,7 @@
       <section class="advantages" id="advantages">
 
         <div class="advantages__wrapper">
-          <h2 class="advantages__title">Почему мы?</h2>
+          <h2 class="advantages__title title">Почему мы?</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
               <img class="advantages__image" src="./img/svg/advantages-1.svg" width="58" height="58" alt="">
@@ -654,7 +652,7 @@
               </p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__image" src="./img/svg/advantages-3.svg" width="58" height="58" alt="">
+              <img class="advantages__image" src="./img/svg/advantages-3.png" width="58" height="58" alt="">
               <h3 class="advantages__subtitle">Мы даем 100% гарантию работоспособности приложения</h3>
               <p class="advantages__description">
                 Создание качественного веб сервиса  это отличный метод. Создание качественного веб сервиса — это отличный метод самостоятельного.
@@ -688,7 +686,7 @@
       <section class="services">
 
         <div class="services__wrapper" data-accordion="parent" data-single="data-single">
-          <h2 class="services__title">Услуги</h2>
+          <h2 class="services__title title">Услуги</h2>
           <div class="services__element" data-accordion="element">
             <button class="services__button" data-accordion="button">
               <span>Разработка мобильного приложения под ключ</span>
@@ -754,11 +752,11 @@
       <section class="feedback">
 
         <div class="feedback__wrapper" data-form-validate data-callback="base">
-          <h2 class="feedback__title">Свяжитесь с нами</h2>
+          <h2 class="feedback__title title">Свяжитесь с нами</h2>
           <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post" >
             <div class="form__field custom-input" data-validate-type="text" data-limitation="cyrillic" data-limitation="name" data-message-base="Поле обязательно для заполненя" data-message-extra="Поле заполнено неправильно" data-message-success="Поле заполнено верно" data-required>
               <label for="name">
-                <input  class="form__input" type="text" placeholder="Имя" id="name">
+                <input  class="form__input" type="text" placeholder="Имя" id="name" autocomplete="off">
                 <span class="visually-hidden">Имя.</span>
               </label>
             </div>
@@ -789,7 +787,7 @@
 
       <section class="reviews">
         <div class="reviews__wrapper">
-          <h2 class="reviews__title">Отзывы</h2>
+          <h2 class="reviews__title title">Отзывы</h2>
           <div class="reviews__slider">
 
             <div class="reviews__slider-container swiper swiper-initialized swiper-horizontal swiper-pointer-events">
@@ -912,7 +910,7 @@
 
       <section class="faq">
         <div class="faq__wrapper">
-          <h2 class="faq__title">Часто задаваемые вопросы</h2>
+          <h2 class="faq__title title">Часто задаваемые вопросы</h2>
           <div class="faq__list" data-accordion="parent">
 
             <div class="faq__item" data-accordion="element">
@@ -1092,57 +1090,69 @@
 
     <footer class="footer">
       <div class="footer__wrapper">
-        <a class="footer__logo logo" href="#">
-          <svg width="102" height="33" viewBox="0 0 102 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <use xlink:href="img/sprite.svg#logo"></use>
-          </svg>
-        </a>
+        <div class="footer__column">
+          <div class="footer__logo-container">
+          <a class="footer__logo logo" href="#">
+            <svg width="102" height="33" viewBox="0 0 102 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
 
-        <div class="footer__requisites">
-          <span>ООО “Акцепт Девелопмент”</span>
-          <span>ИНН 5401402309</span>
-          <span>Россия</span>
-          <span>630089</span>
-        </div>
+            <div class="footer__requisites">
+              <span>ООО “Акцепт Девелопмент”</span>
+              <span>ИНН 5401402309</span>
+              <span>Россия</span>
+              <span>630089</span>
+            </div>
+          </div>
 
-        <div class="footer__contacts contacts">
-          <h2 class="footer__title">Адресс:</h2>
-          <address class="contacts__address">Новосибирская область, г. Новосибирск, ул. Бориса Богаткова, д. 248А, офис 608</address>
-          <a class="contacts__link" href="mailto:info@dstlab.ru">info@dstlab.ru</a>
-        </div>
+          <div class="footer__contacts contacts">
+            <h2 class="footer__title">Адресс:</h2>
+            <address class="contacts__address">Новосибирская область, г. Новосибирск, ул. Бориса Богаткова, д. 248А, офис 608</address>
+            <a class="contacts__link" href="mailto:info@dstlab.ru">info@dstlab.ru</a>
+          </div>
 
-        <div class="footer__nav">
-          <h2 class="footer__title">Карта сайта:</h2>
-          <ul class="footer__nav-list">
-            <li class="footer__nav-item">О компании</li>
-            <li class="footer__nav-item">Жизненный цикл</li>
-            <li class="footer__nav-item">Портфолио</li>
-            <li class="footer__nav-item">Почему мы</li>
-          </ul>
-        </div>
+          <div class="footer__nav">
+            <h2 class="footer__title">Карта сайта:</h2>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#about">О компании</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#life-cycle">Жизненный цикл</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#projects">Портфолио</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#advantages">Почему мы</a>
+              </li>
+            </ul>
+          </div>
+      </div>
 
-        <div class="footer__social">
-          <ul class="footer__social-list social">
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon social__icon--telegram" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#telegram"></use>
-                </svg>
-                <span class="visually-hidden">Телеграм.</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <svg class="social__icon social__icon--whatsapp" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <use xlink:href="img/sprite.svg#whatsApp"></use>
-                </svg>
-                <span class="visually-hidden">Вотс ап.</span>
-              </a>
-            </li>
-          </ul>
+      <div class="footer__info">
 
-          <a class="footer__phone" href="tel:+79581977710">+7 (958) 197-77-10</a>
-        </div>
+        <ul class="footer__social-list social">
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__icon social__icon--telegram" width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#telegram"></use>
+              </svg>
+              <span class="visually-hidden">Телеграм.</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">
+              <svg class="social__icon social__icon--whatsapp" width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="img/sprite.svg#whatsApp"></use>
+              </svg>
+              <span class="visually-hidden">Вотс ап.</span>
+            </a>
+          </li>
+        </ul>
+
+        <a class="footer__phone" href="tel:+79581977710">+7 (958) 197-77-10</a>
 
         <a class="footer__btn-presentation" href="#">Презентация</a>
 
@@ -1150,6 +1160,7 @@
 
         <a class="footer__politic" href="https://dstlab.ru/%d0%bf%d0%be%d0%bb%d0%b8%d1%82%d0%b8%d0%ba%d0%b0-%d0%ba%d0%be%d0%bd%d1%84%d0%b8%d0%b4%d0%b5%d0%bd%d1%86%d0%b8%d0%b0%d0%bb%d1%8c%d0%bd%d0%be%d1%81%d1%82%d0%b8/">Политика конфиденциальности</a>
       </div>
+    </div>
     </footer>
 
     <section class="modal" data-modal="modal-form" data-scroll-lock-scrollable="" data-form-validate data-callback="base">
@@ -1160,7 +1171,7 @@
 
             <div class="form__field custom-input" data-validate-type="text" data-limitation="name" data-message-base="Заполните поле" data-message-extra="Поле заполнено неправильно" data-required>
               <label for="name">
-                <input  class="form__input" type="text" placeholder="Имя" id="name" required>
+                <input  class="form__input" type="text" placeholder="Имя" id="name" required autocomplete="off">
                 <span class="visually-hidden">Имя.</span>
               </label>
             </div>
@@ -1222,20 +1233,6 @@
     </div>
     </section>
 
-    <!-- <section class="modal" data-modal="modal-form-success" data-scroll-lock-scrollable="">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal=""></div>
-        <div class="modal__content">
-          <section>
-            <h2 class="subtitle">Мы получили вашу заявку и свяжемся с вами в ближайшее время!</h2>
-          </section>
-          <button class="modal__close-btn button button--accent" type="button" aria-label="Закрыть попап" data-close-modal="" data-focus="">
-            Закрыть
-          </button>
-        </div>
-      </div>
-    </section> -->
-
     <section class="modal-projects" data-modal="projects-card-1" data-scroll-lock-scrollable="">
       <div class="modal-projects__wrapper">
         <div class="modal-projects__overlay" data-close-modal=""></div>
@@ -1269,7 +1266,7 @@
                   <dd class="projects__value">Этот проект доведен до публикации в Store, он доступен для скачивания, но находится на данный момент на этапе MVP. Сейчас планируется продвижение по этому этапу, связанное переносом серверов и т.д., еще одни доработки дальше уже будет рассматриваться второй этап, то есть продолжение работ.</dd>
                 </div>
               </dl>
-              <img class="projects__image" src="./img/projects-modal-1.webp" srcset="/img/projects-modal-1@2x.webp" height="436" alt="мобильное приложение.">
+              <img class="projects__image" src="./img/projects-modal-1.webp" srcset="./img/projects-modal-1@2x.webp" height="436" alt="мобильное приложение.">
 
               <button class="projects__button button button--accent" type="button" data-close-modal="" data-focus="">Свернуть</button>
           </article>
@@ -1310,7 +1307,7 @@
                   <dd class="projects__value">Этот проект доведен до публикации в Store, он доступен для скачивания, но находится на данный момент на этапе MVP. Сейчас планируется продвижение по этому этапу, связанное переносом серверов и т.д., еще одни доработки дальше уже будет рассматриваться второй этап, то есть продолжение работ.</dd>
                 </div>
               </dl>
-              <img class="projects__image" src="./img/projects-modal-1.webp" srcset="/img/projects-modal-1@2x.webp" height="436" alt="мобильное приложение.">
+              <img class="projects__image" src="./img/projects-modal-1.webp" srcset="./img/projects-modal-1@2x.webp" height="436" alt="мобильное приложение.">
 
               <button class="projects__button button button--accent" type="button" data-close-modal="" data-focus="">Свернуть</button>
           </article>
@@ -1351,7 +1348,7 @@
                   <dd class="projects__value">Этот проект доведен до публикации в Store, он доступен для скачивания, но находится на данный момент на этапе MVP. Сейчас планируется продвижение по этому этапу, связанное переносом серверов и т.д., еще одни доработки дальше уже будет рассматриваться второй этап, то есть продолжение работ.</dd>
                 </div>
               </dl>
-              <img class="projects__image" src="./img/projects-modal-1.webp" srcset="/img/projects-modal-1@2x.webp" height="436" alt="мобильное приложение.">
+              <img class="projects__image" src="./img/projects-modal-1.webp" srcset="./img/projects-modal-1@2x.webp" height="436" alt="мобильное приложение.">
 
               <button class="projects__button button button--accent" type="button" data-close-modal="" data-focus="">Свернуть</button>
           </article>
@@ -1396,7 +1393,7 @@
                   <dd class="projects__value">Эти проблемы решались изучением - где-то среды, что должно быть, что захочет в итоге увидеть пользователь, что захочет увидеть клиент, какой ему будет нужен функционал, как ему будет удобно, какой архитектурой ему будет удобно пользоваться и так далее. Также подбор персонала под выполнение обязанностей по Backend и руководство персоналом на части мобильного приложения.</dd>
                 </div>
               </dl>
-              <img class="projects__image" src="./img/projects-modal-4.webp" srcset="/img/projects-modal-4@2x.webp" height="436" alt="мобильное приложение.">
+              <img class="projects__image" src="./img/projects-modal-4.webp" srcset="./img/projects-modal-4@2x.webp" height="436" alt="мобильное приложение.">
 
               <button class="projects__button button button--accent" type="button" data-close-modal="" data-focus="">Свернуть</button>
           </article>
@@ -1441,7 +1438,7 @@
                   <dd class="projects__value">Пришлось вникать в неочевидные, немного непонятные техническими решениями предыдущего разработчик и разбираться с ними. Основная задача - создание нового функционала, которого раньше не было</dd>
                 </div>
               </dl>
-              <img class="projects__image" src="./img/projects-modal-5.webp" srcset="/img/projects-modal-5@2x.webp" height="436" alt="мобильное приложение.">
+              <img class="projects__image" src="./img/projects-modal-5.webp" srcset="./img/projects-modal-5@2x.webp" height="436" alt="мобильное приложение.">
 
               <button class="projects__button button button--accent" type="button" data-close-modal="" data-focus="">Свернуть</button>
           </article>

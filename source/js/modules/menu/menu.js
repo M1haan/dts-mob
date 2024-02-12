@@ -21,6 +21,6 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-if (window.innerWidth >= 1920) {
+if (window.innerWidth >= 1440) {
   social.classList.remove('social--no-visibility');
 }

@@ -5,7 +5,7 @@
     border: none;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     z-index: 1;
   }
 }
@@ -24,9 +24,9 @@
     justify-content: space-between;
   }
 
-  @media (min-width: $desktop-width) {
-    min-width: 1780px;
-    padding: 25px 50px 14px;
+  @media (min-width: 1440px) {
+    min-width: 1220px;
+    padding: 25px 70px 14px;
   }
 }
 
@@ -48,7 +48,7 @@
     height: 52px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     width: 202px;
     height: 59px;
     padding-top: 2px;
@@ -60,7 +60,7 @@
     padding-bottom: 5px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     padding: 0;
   }
 }
@@ -93,7 +93,7 @@
     left: calc(50% - 12.5px);
     width: 25px;
     height: 16px;
-    background-image: url("/img/sprite/menu-open.svg");
+    background-image: url("../img/svg/menu-open.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -101,14 +101,16 @@
   &::after {
     content: "";
     position: absolute;
-    top: 20%;
-    left: 23%;
+    top: calc(50% - 13px);
+    left: calc(50% - 13px);
     width: 26px;
     height: 26px;
-    background-image: url("/img/sprite/menu-close.svg");
+    background-image: url("../img/svg/menu-close.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     display: none;
   }
 
@@ -126,7 +128,7 @@
   display: flex;
   width: 100%;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     width: auto;
   }
 }
@@ -144,7 +146,7 @@
   background-color: $default-black-color;
   min-height: 365px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     position: static;
     display: flex;
     flex-wrap: wrap;
@@ -154,7 +156,7 @@
     background-color: transparent;
   }
 
-  @media (max-width: 1919px) {
+  @media (max-width: 1439px) {
     &::after {
       content: "";
       position: absolute;
@@ -162,14 +164,14 @@
       right: 0;
       width: 255px;
       height: 188px;
-      background-image: url("/img/star-menu-mobile.webp");
+      background-image: url("../img/star-menu-mobile.webp");
       background-repeat: no-repeat;
       background-size: cover;
 
       @media (min-width: $tablet-width) {
         width: 440px;
         height: 326px;
-        background-image: url("/img/star-menu-tablet.webp");
+        background-image: url("../img/star-menu-tablet.webp");
       }
     }
   }
@@ -191,7 +193,7 @@
     padding: 18px 0 16px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     background-color: transparent;
     padding: 0;
     margin-top: 0;
@@ -200,7 +202,7 @@
   &:first-child {
     padding-top: 37px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $laptop-width) {
       padding-top: 0;
     }
 
@@ -212,7 +214,7 @@
       height: 2px;
       background: linear-gradient(90deg, #20b985 10%, #2ba2b2 80%);
 
-      @media (min-width: $desktop-width) {
+      @media (min-width: $laptop-width) {
         display: none;
       }
     }
@@ -232,7 +234,7 @@
       width: 344px;
     }
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $laptop-width) {
       display: none;
     }
   }
@@ -257,7 +259,7 @@
     padding-left: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     font-size: 18px;
   }
 }
@@ -280,7 +282,7 @@
 .main-header__nav--closed .main-header__nav-list {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     display: flex;
   }
 }
@@ -289,7 +291,7 @@
   position: absolute;
   display: block;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     position: static;
     display: flex;
   }
@@ -310,7 +312,7 @@
 .main-header__phone {
   display: none;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $laptop-width) {
     display: block;
     font-family: $Inter-ff;
     font-size: 20px;

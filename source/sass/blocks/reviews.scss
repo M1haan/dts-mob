@@ -9,6 +9,11 @@
     gap: 30px;
   }
 
+  @media (min-width: $laptop-width) {
+    padding: 40px 100px;
+    max-width: 1220px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 90px 70px 40px;
     max-width: 1780px;
@@ -16,39 +21,18 @@
 }
 
 .reviews__title {
-  font-family: $Manrope-ff;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 26px;
-    font-weight: 700;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 68px;
-    font-weight: 600;
+  @media (min-width: $laptop-width) {
     margin-bottom: 50px;
   }
 }
 
 .reviews__slider {
   position: relative;
-  width: 390px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   gap: 50px;
   align-items: center;
-
-  @media (min-width: $tablet-width) {
-    width: 698px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1780px;
-  }
 }
 
 .reviews__list {
@@ -72,6 +56,12 @@
     box-sizing: border-box;
   }
 
+  @media (min-width: $laptop-width) {
+    min-width: 640px;
+    padding: 45px 50px;
+    gap: 50px;
+  }
+
   @media (min-width: $desktop-width) {
     gap: 50px;
     max-width: 1020px;
@@ -91,6 +81,13 @@
     margin-bottom: 0;
   }
 
+  @media (min-width: $laptop-width) {
+    img {
+      width: 245px;
+      height: auto;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     img {
       width: 285px;
@@ -101,12 +98,12 @@
   &::after {
     content: "";
     position: absolute;
-    background: url("/img/svg/reviews-for-image.svg");
+    background: url("../img/svg/reviews-for-image.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
     z-index: -1;
-    width: 356px;
+    width: 350px;
     height: 323px;
     top: -40px;
     right: -60px;
@@ -114,7 +111,7 @@
     @media (min-width: $desktop-width) {
       top: -60px;
       right: -75px;
-      width: 429px;
+      width: 425px;
       height: 390px;
     }
   }
@@ -122,7 +119,7 @@
   &::before {
     content: "";
     position: absolute;
-    background: url("/img/svg/reviews-star.svg");
+    background: url("../img/svg/reviews-star.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -215,7 +212,7 @@
     right: 17.5%;
     width: 13px;
     height: 6px;
-    background: url("/img/svg/reviews-arrow.svg") no-repeat center;
+    background: url("../img/svg/reviews-arrow.svg") no-repeat center;
 
     @media (min-width: $desktop-width) {
       right: 5%;

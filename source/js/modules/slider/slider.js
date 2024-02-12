@@ -1,13 +1,13 @@
 function initHeroSwiper() {
-  let heroSwiper = new Swiper('.swiper-hero', {
+  let heroSwiper = new Swiper('.hero-swiper', {
 
     pagination: {
       el: '.hero__pagination',
       clickable: true,
+      spaceBetween: 50,
     },
 
     direction: 'horizontal',
-    grabCursor: true,
     loop: true,
     slidesPerView: 1,
     speed: 2000,
@@ -57,6 +57,22 @@ function initReviewsSwiper() {
     autoplay: {
       delay: 1000,
     },
+
+    breakpoints: {
+      390: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 1,
+      },
+      1440: {
+        spaceBetween: 20,
+        slidesPerView: 2,
+      },
+      1920: {
+        slidesPerView: 1,
+      },
+    },
   });
   return reviewsSwiper;
 }
@@ -81,6 +97,10 @@ function initProjectsSwiper() {
       768: {
         spaceBetween: 24,
         slidesPerView: 2,
+      },
+      1440: {
+        spaceBetween: 40,
+        slidesPerView: 3,
       },
       1920: {
         spaceBetween: 50,

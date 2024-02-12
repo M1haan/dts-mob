@@ -1,6 +1,6 @@
 .advantages {
   color: $default-white-color;
-  background: url("/img/advantages-background.webp") no-repeat;
+  background: url("../img/advantages-background.webp") no-repeat;
   background-size: cover;
   position: relative;
 
@@ -10,7 +10,7 @@
       position: absolute;
       top: -200px;
       left: -78px;
-      background-image: url("/img/svg/advantages-circle.svg");
+      background-image: url("../img/svg/advantages-circle.svg");
       background-repeat: no-repeat;
       background-position: center;
       width: 312px;
@@ -21,21 +21,13 @@
 }
 
 .advantages__title {
-  font-family: $Manrope-ff;
-  font-size: 24px;
-  font-weight: 700;
-  text-align: center;
-  margin: 0;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    font-size: 26px;
     margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    font-weight: 600;
-    font-size: 55px;
     margin-bottom: 80px;
   }
 }
@@ -48,6 +40,12 @@
   @media (min-width: $tablet-width) {
     min-width: 698px;
     padding: 40px 35px;
+    gap: 30px;
+  }
+
+  @media (min-width: $laptop-width) {
+    min-width: 1220px;
+    padding: 60px 100px;
     gap: 30px;
   }
 
@@ -88,7 +86,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: calc(50% - 83px);
     width: 183px;
     height: 100px;
@@ -122,7 +120,7 @@
     bottom: -15px;
     left: 0;
     right: 0;
-    background-image: url("/img/advantages-line.webp");
+    background-image: url("../img/advantages-line.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
