@@ -3244,6 +3244,7 @@
   padding: 10px 10px 10px 0;
   background-color: transparent;
   border: none;
+  border-radius: unset;
   color: #ffffff;
   font-family: "Nunito", sans-serif;
   font-size: 18px;
@@ -3738,7 +3739,7 @@
 .reviews__image::before {
   content: "";
   position: absolute;
-  background: url("../img/svg/reviews-star.svg");
+  background-image: url("../img/svg/reviews-star.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
