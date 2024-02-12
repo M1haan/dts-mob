@@ -929,13 +929,6 @@
 .hero .swiper-pagination-bullet-active {
   background-color: #20b985;
   outline-color: #20b985;
-  -webkit-transform: translateX(10px);
-      -ms-transform: translateX(10px);
-          transform: translateX(10px);
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
 }
 
 .hero__wrapper {

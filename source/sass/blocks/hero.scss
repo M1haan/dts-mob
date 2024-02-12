@@ -97,9 +97,6 @@
       &-active {
         background-color: $color-accent;
         outline-color: $color-accent;
-
-        transform: translateX(10px);
-        transition: transform 0.8s;
       }
     }
   }
